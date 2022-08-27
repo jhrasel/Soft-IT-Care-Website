@@ -44,7 +44,7 @@ const OurVacancie = () => {
                                     </div>
 
                                     <div className="view_details">
-                                        <Link to='' className='bg'>View Details</Link>
+                                        <Link to='/carrer-details' className='bg'>View Details</Link>
                                     </div>
 
                                 </div>
@@ -64,7 +64,7 @@ const OurVacancie = () => {
                                     </div>
 
                                     <div className="view_details">
-                                        <Link to='' className='bg'>View Details</Link>
+                                        <Link to='/carrer-details' className='bg'>View Details</Link>
                                     </div>
 
                                 </div>
@@ -84,7 +84,7 @@ const OurVacancie = () => {
                                     </div>
 
                                     <div className="view_details">
-                                        <Link to='' className='bg'>View Details</Link>
+                                        <Link to='/carrer-details' className='bg'>View Details</Link>
                                     </div>
 
                                 </div>
@@ -104,7 +104,7 @@ const OurVacancie = () => {
                                     </div>
 
                                     <div className="view_details">
-                                        <Link to='' className='bg'>View Details</Link>
+                                        <Link to='/carrer-details' className='bg'>View Details</Link>
                                     </div>
 
                                 </div>
@@ -124,7 +124,7 @@ const OurVacancie = () => {
                                     </div>
 
                                     <div className="view_details">
-                                        <Link to='' className='bg'>View Details</Link>
+                                        <Link to='/carrer-details' className='bg'>View Details</Link>
                                     </div>
 
                                 </div>
@@ -144,7 +144,7 @@ const OurVacancie = () => {
                                     </div>
 
                                     <div className="view_details">
-                                        <Link to='' className='bg'>View Details</Link>
+                                        <Link to='/carrer-details' className='bg'>View Details</Link>
                                     </div>
 
                                 </div>

@@ -166,6 +166,8 @@ const WeOffer = () => {
                     
                 </Container>
 
+                <div className="section_gaps"></div>
+
             </section>
 
         </>

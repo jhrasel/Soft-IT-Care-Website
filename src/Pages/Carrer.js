@@ -24,8 +24,6 @@ export const Carrer = () => {
 
             <WeOffer></WeOffer>
 
-            <div className="section_gaps"></div>
-
             <Footer></Footer>
 
 

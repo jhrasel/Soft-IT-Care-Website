@@ -1,5 +1,9 @@
-import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import Menubar from '../Components/Commons/Menubar';
+import Footer from '../Components/Commons/Footer';
+import CarrerDetailsBanner from '../Components/CarrerPages/CareerDetails/CarrerDetailsBanner';
+import WhoWeAre from '../Components/CarrerPages/CareerDetails/WhoWeAre';
+import VacancyDetails from '../Components/CarrerPages/CareerDetails/VacancyDetails';
 
 const CarrerDetails = () => {
 
@@ -10,27 +14,15 @@ const CarrerDetails = () => {
         <>
         
 
-            <section className='CarrerDetails'>
-                    
-                <Container>
+            <Menubar active='career'></Menubar>
 
-                    <Row>
+            <CarrerDetailsBanner></CarrerDetailsBanner>
 
-                        <Col sm={4}>
+            <WhoWeAre></WhoWeAre>
 
-                            <div className="Support">
+            <VacancyDetails></VacancyDetails>
 
-                                
-
-                            </div>
-
-                        </Col>
-
-                    </Row>
-
-                </Container>
-
-            </section>
+            <Footer></Footer>
 
 
         </>

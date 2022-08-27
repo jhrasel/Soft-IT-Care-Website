@@ -1,0 +1,249 @@
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1700px) {
+    .Menubar {
+        width: calc(100% - 80px);
+        margin-top: 50px;
+    }
+    .CarrerBannerImg {
+        text-align: right;
+    }
+    .CarrerBannerImg img {
+        width: 90%;
+    }
+}
+
+
+/* // XX-Large devices (larger desktops, 1400px and up) */
+@media (max-width: 1440px) {
+    .container {
+        max-width: 1200px ;
+    }
+    .Menubar {
+        width: calc(100% - 120px);
+        margin-top: 50px;
+    }
+    .MenuItem ul li a {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+    .SocialIcon .svg {
+        width: 40px;
+        height: 40px;
+    }
+    .SocialIcon .svg svg {
+        font-size: 20px;
+    }
+    .container h1 {
+        font-size: 40px;
+        line-height: 55px;
+    }
+    .CarrerBannerImg {
+        text-align: right;
+    }
+    .CarrerBannerImg img {
+        width: 75%;
+    }
+    .CarrerBanner .row {
+        min-height: 500px;
+    }
+    .container p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .container a, .container button {
+        font-size: 16px;
+        line-height: 28px;
+    }
+    .container h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .container h3 {
+        font-size: 24px;
+        line-height: 35px;
+    }
+    .OurVacancieItem ul li {
+        font-size: 17px;
+        line-height: 25px;
+        margin-bottom: 5px;
+    }
+    .imgHeight img {
+        height: 85px;
+        width: 85px;
+    }
+    .WeOfferPart h4 {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .OfficeAddressItem {
+        padding: 20px;
+    }
+    .OfficeAddressItem .text h4 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .OfficeAddressItem .text p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .OfficeAddressItem .svg {
+        width: 55px;
+        height: 55px;
+    }
+    .OfficeAddressItem .svg svg {
+        font-size: 25px;
+    }
+    .OfficeAddressItem {
+        padding: 20px;
+        min-height: 225px;
+    }
+    .CarrerDetailsBannerContent h2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .CarrerDetailsBannerContent ul li {
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .CarrerDetailsBannerContent {
+        border-radius: 10px;
+        padding: 30px;
+    }
+    .VideoPlayerItem div{
+        width: 100% !important;
+        height: 500px !important;
+    }
+    .VacancyDetailItem {
+        margin-top: 30px;
+    }
+    .container li {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .VacancyDetailItem ul li::after {
+        top: 8px;
+    }
+    .CarrerSuccessFull h4 {
+        font-size: 26px;
+        line-height: 35px;
+    }
+    .CarrerSuccessFull p {
+        max-width: 780px;
+    }
+    
+
+
+}
+
+
+
+/* // XX-Large devices (larger desktops, 1280px and up) */
+@media (max-width: 1280px) {
+
+    .container {
+        max-width: 1024px;
+    }
+    .container h1 {
+        font-size: 30px;
+        line-height: 45px;
+    }
+    .CarrerBannerImg img {
+        width: 70%;
+    }
+    .CarrerBannerImg {
+        width: 62%;
+    }
+    .CarrerBannerImg img {
+        width: 90%;
+    }
+    .CarrerBanner .GoPages {
+        margin-top: 30px;
+    }
+    .section_gaps {
+        padding-top: 70px;
+    }
+    .container h2 {
+        font-size: 35px;
+        line-height: 45px;
+    }
+    .container h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .OurVacancieItem ul li {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 5px;
+    }
+    .WeOfferContent {
+        border-radius: 20px;
+        padding: 30px;
+    }
+    .FooterContent {
+        padding: 30px;
+    }
+    .Footer .left .img img {
+        height: 70px;
+    }
+    .Footer .right {
+        margin-left: 0px;
+    }
+    .OfficeAddressItem .text h4 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .OfficeAddressItem .text p {
+        font-size: 15px;
+    }
+    .container p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    .TinyFooter .svg {
+        width: 65px;
+        height: 65px;
+    }
+    .TinyFooter .svg svg {
+        font-size: 25px;
+    }
+    .MenuItem ul li a {
+        font-size: 16px;
+        padding: 0 11px;
+    }
+    .CarrerDetailsBannerContent h2 {
+        font-size: 25px;
+        line-height: 35px;
+    }
+    .CarrerDetailsBannerContent ul li {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .PersonalInfoFormContent h2 {
+        font-size: 30px;
+    }
+    .CustomeInput .img img {
+        width: 100%;
+    }
+    .CarrerBanner .row {
+        min-height: 460px;
+    }
+
+
+}
+
+
+/* // XX-Large devices (larger desktops, 1280px and up) */
+@media (max-width: 1024px) {
+
+   
+
+
+}
+
+
+
+/* // XX-Large devices (larger desktops, 1280px and up) */
+@media (max-width: 768px) {
+
+}
