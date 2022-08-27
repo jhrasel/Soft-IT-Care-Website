@@ -1,0 +1,652 @@
+
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container ol,
+  .container ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: none;
+  }
+  
+  .container a,
+  .container h1,
+  .container h2,
+  .container h3,
+  .container h4,
+  .container h5,
+  .container h6,
+  .container p,
+  .container span {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .form-control:focus {
+    box-shadow: none;
+  }
+  
+  input:focus, textarea:focus, select:focus {
+    box-shadow: none;
+    outline: unset;
+  }
+  
+  body {
+    font-family: 'Roboto', sans-serif !important;
+    background: url('../public/assets/images/body.png')!important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    background-attachment: fixed !important;
+    background-position: center !important;
+    height: 100% !important;
+  }
+
+  .container{
+    max-width: 1440px;
+  }
+  
+    /* font-family: 'Vollkorn', serif; */
+  
+  /* =============== COMMON CSS FOR WEB SITE =============== */
+  :root {
+    --heading_color: #2B32B2;
+    --heading_color2: #F29D00;
+    --text_color: #5F5F5F;
+    --text_color2: #9A9EA6;
+    --white_color: #fff;
+  }
+  
+  .container h1 {
+    font-weight: 400;
+    font-size: 52px;
+    line-height: 70px;
+    color: var(--text_color);
+  }
+
+  .container h1 span{
+    font-weight: 700;
+    color: var(--heading_color2);
+  }
+  
+  .container h2 {
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 60px;
+    color: var(--text_color);
+  }
+
+  .container h2 span{
+    color: var(--heading_color2);
+  }
+  
+  .container h3 {
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  
+  
+  .container p {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--text_color);
+    font-family: 'Vollkorn', serif;
+    margin-top: 15px;
+  }
+  
+  .container a, .container button {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 35px;
+    display: inline-block;
+  }
+
+  a.bg, button.bg{
+    background-image: linear-gradient(90deg, #1488CC 0%, #2B32B2 100%);;
+    padding: 10px 30px;
+    color: var(--white_color);
+    border-radius: 30px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;         
+    box-shadow: 0 0 20px #eee;
+  }
+  
+ a.bg:hover{
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .d_flex {
+    display: flex;
+    align-items: center;
+  }
+  
+  .d_justify {
+    justify-content: space-between;
+  }
+  
+  .section_gaps {
+    padding-top: 100px;
+  }
+  
+  input, label, textarea{
+    font-size: 16px;
+  }
+  
+  button{
+    border: none;
+  }
+
+  .header p{
+    margin-top: 5px;
+  }
+  
+  
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Menubar PART
+  --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+.Menubar{
+  width: calc(100% - 240px);
+  margin: 0 auto;
+  background: #FFFFFF;
+  border-radius: 10px;
+  margin-top: 70px;
+  padding: 5px 0;
+}
+
+.MenuItem ul li{
+  display: inline-block;
+}
+
+.MenuItem{
+  text-align: center;
+}
+
+.MenuItem ul li a{
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--text_color);
+  padding: 0 20px;
+  font-family: 'Vollkorn', serif;
+}
+
+.Menubar .MenuItem ul li.active a{
+  color: var(--heading_color);
+  font-weight: 700;
+}
+
+.SocialIcon{
+  text-align: right;
+  justify-content: flex-end;
+}
+
+.SocialIcon .svg{
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #EDF4FF;
+  margin: 0 10px;
+  border-radius: 2px;
+}
+
+.SocialIcon .svg:last-child{
+  margin-right: 0;
+}
+
+.SocialIcon .svg svg{
+  font-size: 28px;
+}
+
+.SocialIcon .svg.fb svg{
+  color: #337FFF;
+}
+
+.SocialIcon .svg.instagram{
+  background: #FAF5FC;
+}
+
+.SocialIcon .svg.instagram svg{
+  color: #FA8F21;
+}
+
+.SocialIcon .svg.linkdin{
+  background: #EEFAFF;
+}
+
+.SocialIcon .svg.linkdin svg{
+  color: #006699;
+}
+
+.SocialIcon .svg.youtube{
+  background: #FFECE8;
+}
+
+.SocialIcon .svg.youtube svg{
+  color: #FF3000;
+}
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START CarrerPages PART
+  --------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+  /* -------------------------------
+  CarrerBanner
+  ------------------------------- */
+
+  .CarrerBanner{
+    position: relative;
+    
+  }
+
+  .CarrerBanner .row{
+    min-height: 670px;
+  }
+
+  .CarrerBannerImg {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  .CarrerBanner .GoPages{
+    margin-top: 50px;
+  }
+
+  a.bg.getLocation {
+    margin-left: 20px;
+    background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+  }
+
+  a.bg.getLocation:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+  }
+
+  /* -------------------------------
+  OurVacancie
+  ------------------------------- */
+
+  .OurVacancieContent{
+    margin-top: 50px;
+  }
+
+  .OurVacancieItem{
+    background: #FFFFFF;
+    box-shadow: 0px 0px 267.702px rgba(141, 141, 141, 0.09), 0px 0px 156.779px rgba(141, 141, 141, 0.0683333), 0px 0px 85.2682px rgba(141, 141, 141, 0.0546667), 0px 0px 43.5016px rgba(141, 141, 141, 0.045), 0px 0px 21.8128px rgba(141, 141, 141, 0.0353333), 0px 0px 10.5346px rgba(141, 141, 141, 0.0216667);
+    border-radius: 15px;
+    margin-bottom: 30px;
+  }
+
+  .OurVacancieItem .text{
+    padding: 30px;
+  }
+
+  .OurVacancieItem .text h3{
+    border-bottom: 1px solid #D9D9D9;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    color: var(--heading_color);
+  }
+
+  .OurVacancieItem ul li{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 30px;
+    color: var(--text_color2);
+    margin-bottom: 10px;
+  }
+
+  .OurVacancieItem ul li:last-child{
+    margin-bottom: 0;
+  }
+
+  .OurVacancieItem ul li span{
+    font-weight: 700;
+    color: var(--text_color);
+  }
+
+  .OurVacancieItem .view_details .bg{
+    border-radius: 0 0 15px 15px;
+    width: 100%;
+  }
+
+  /* -------------------------------
+  WeOfferContent
+  ------------------------------- */
+  .WeOfferContent{
+    background: #FCFCFC;
+    border-radius: 50px;
+    padding: 50px;
+  }
+
+  .WeOfferPart{
+    margin-top: 50px;
+  }
+
+  .WeOfferPart img{
+    width: 100%;
+  }
+
+  .Coffee{
+    background: #7CD000;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+
+  .pd_b {
+    margin-bottom: 30px;
+  }
+
+  .Coffee::after {
+    position: absolute;
+    content: '';
+    top: 30px;
+    right: -50px;
+    border-top: 30px solid transparent;
+    border-left: 50px solid #7CD000;
+    border-bottom: 30px solid transparent;
+  }
+
+  .imgHeight img{
+    height: 100px;
+    width: 100px;
+  }
+
+  .WeOfferPart h4{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--white_color);
+    margin-top: 10px;
+  }
+
+  /* .YearlyTour */
+  .YearlyTour{
+    background: #00BE90;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+
+  .YearlyTour::after {
+    position: absolute;
+    content: '';
+    left: -50px;
+    bottom: 30px;
+    border-top: 30px solid transparent;
+    border-right: 50px solid #00BE90;
+    border-bottom: 30px solid transparent;
+    border-left: none;
+  }
+
+  .FestiveBirthday{
+    background: #029ADF;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+
+  .FestiveBirthday::after {
+    position: absolute;
+    content: '';
+    right: 50px;
+    bottom: -50px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-top: 50px solid #029ADF;
+  }
+
+  .FrequentPizza{
+    background: #006ED6;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+  }
+
+  .FrequentPizza::after {
+    position: absolute;
+    content: '';
+    right: 50px;
+    top: -50px;
+    border-left: 30px solid transparent;
+    border-right: 30px solid transparent;
+    border-bottom: 50px solid #006ED6;
+  }
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START Footer PART
+  --------------------------------------------------------------------------------------------------------------------------------------------------- */
+  .Footer{
+    background: var(--heading_color);
+  }
+
+  .Footer .MenuItem ul li a{
+    color: var(--white_color)
+  }
+
+  .Footer .left{
+    margin-right: 20px;
+  }
+
+  .Footer .right{
+    margin-left: 30px;
+  }
+
+  .FooterContent{
+    filter: drop-shadow(0px 8px 30px rgba(0, 0, 0, 0.25));
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 50px;
+    margin-top: 50px;
+  }
+
+  .Footer .SocialIcon{
+    justify-content: flex-start;
+    margin-top: 30px;
+  }
+
+  .Footer .SocialIcon .svg{
+
+    transition: all linear .3s;
+  }
+
+  .Footer .SocialIcon .svg:first-child{
+    margin-left: 0;
+  }
+
+  .Footer .SocialIcon .svg:hover{
+    border-radius: 50%;
+  }
+
+  .Footer .right h3{
+    color: var(--heading_color);
+  }
+
+  .Footer .right h3 img{
+    margin-left: 10px;
+  }
+
+  .OfficeAddress{
+    margin-top: 30px;
+  }
+
+  .OfficeAddressItem{
+    background: #F3F5FC;
+    border-radius: 15px 0px 0px 15px;
+    padding: 30px;
+    text-align: center;
+  }
+
+  .OfficeAddressItem:nth-child(2){
+    border-radius: 0px;
+    background: #E7ECFF;
+  }
+
+  .OfficeAddressItem:nth-child(3){
+    border-radius: 0px 15px 15px 0px;
+  }
+
+  .OfficeAddressItem .svg{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background: var(--heading_color2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .OfficeAddressItem .svg svg{
+    font-size: 35px;
+    color: var(--white_color);
+  }
+
+  .OfficeAddressItem .text{
+    margin-top: 10px;
+  }
+
+  .OfficeAddressItem .text h4{
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: var(--heading_color);
+  }
+
+  .OfficeAddressItem .text p{
+    margin-top: 5px;
+    font-size: 15px;
+    line-height: 24px;
+  }
+
+  /* TinyFooter */
+  .TinyFooter {
+    background: var(--heading_color2);
+    padding-top: 75px;
+    padding-bottom: 45px;
+    margin-top: -30px;
+  }
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+  --------------------------------------------------------------------------------------------------------------------------------------------------- */
+  
+.TinyFooter .svg{
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: var(--white_color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 20px;
+}
+
+.TinyFooter .svg svg{
+  font-size: 30px;
+  color: #1488CC;
+}
+
+.TinyFooter a{
+  display: block;
+  color:var(--white_color);
+}
+
+.TinyFooter p{
+  display: block;
+  color:var(--white_color);
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 35px;
+  margin-top: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+  --------------------------------------------------------------------------------------------------------------------------------------------------- */
+  
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+  --------------------------------------------------------------------------------------------------------------------------------------------------- */
+  
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+  --------------------------------------------------------------------------------------------------------------------------------------------------- */
+  
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+  --------------------------------------------------------------------------------------------------------------------------------------------------- */
+  
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+  --------------------------------------------------------------------------------------------------------------------------------------------------- */
+  
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+  --------------------------------------------------------------------------------------------------------------------------------------------------- */
+  
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+  --------------------------------------------------------------------------------------------------------------------------------------------------- */
+  
+  
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+    START  PART
+  --------------------------------------------------------------------------------------------------------------------------------------------------- */
