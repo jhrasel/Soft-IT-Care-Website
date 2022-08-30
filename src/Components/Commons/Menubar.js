@@ -26,7 +26,7 @@ const Menubar = (props) => {
                             <Col sm={2}>
 
                                 <div className="logo">
-                                    <img src="assets/images/logo.png" alt="logo" />
+                                    <Link to='/'><img src="assets/images/logo.png" alt="logo" /></Link>
                                 </div>
 
                             </Col>
@@ -37,11 +37,11 @@ const Menubar = (props) => {
 
                                     <ul>
 
-                                        <li className={props.active ==  'home' && 'active'}> <Link to=''>Home</Link> </li>
+                                        <li className={props.active ==  'home' && 'active'}> <Link to='/'>Home</Link> </li>
                                         <li className={props.active == 'service' && 'active'}> <Link to=''>Services</Link> </li>
                                         <li className={props.active == 'portfolio' && 'active'}> <Link to=''>Portfolio</Link> </li>
                                         <li className={props.active == 'aboutus' && 'active'}> <Link to=''>About Us</Link> </li>
-                                        <li className={props.active == 'career' && 'active'}> <Link to=''>Career</Link> </li>
+                                        <li className={props.active == 'career' && 'active'}> <Link to='/carrer'>Career</Link> </li>
                                         <li className={props.active == 'contactus' && 'active'}> <Link to=''>Contact Us</Link> </li>
 
                                     </ul>

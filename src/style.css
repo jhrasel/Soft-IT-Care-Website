@@ -146,7 +146,7 @@
   }
   
   .section_gaps {
-    padding-top: 100px;
+    padding-top: 150px;
   }
   
   input, label, textarea{
@@ -305,44 +305,224 @@
   border-radius: 50%;
 }
 
+.GoPages {
+  margin-top: 30px;
+}
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+  START Home Pages PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+
+/* -------------------------------
+Banner
+------------------------------- */
+.Banner img{
+  width: 100%;
+}
+
+.Achievement{
+  margin-top: 70px;
+}
+
+.AchievementItem {
+  background: var(--white_color);
+  box-shadow: 0px 36.5486px 69.6164px rgba(102, 102, 102, 0.07), 0px 23.6889px 40.7707px rgba(102, 102, 102, 0.0531481), 0px 14.078px 22.1741px rgba(102, 102, 102, 0.0425185), 0px 7.30972px 11.3127px rgba(102, 102, 102, 0.035), 0px 2.97803px 5.67244px rgba(102, 102, 102, 0.0274815), 0px 0.676826px 2.73953px rgba(102, 102, 102, 0.0168519);
+  border-radius: 15px;
+  padding: 20px;
+  transition: all linear .3s;
+  min-height: 220px;
+}
+
+.AchievementItem:hover{
+  transform: translateY(-5px);
+}
+
+.AchievementItem .img{
+  text-align: center;
+}
+
+.AchievementItem img{
+  width: 100px;
+  height: 100px;
+}
+
+.AchievementItem .text{
+  margin-top: 30px;
+  justify-content: center;
+}
+
+.AchievementItem h3{
+  padding-right: 10px;
+  margin-right: 10px;
+  border-right: 1px solid var(--text_color2);
+  font-size: 32px;
+  line-height: 40px;
+  width: 45%;
+  text-align: right;
+}
+
+.AchievementItem p {
+  margin-top: 0;
+  width: 55%;
+  text-align: left;
+  line-height: 22px;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+/* -------------------------------
+AboutUs
+------------------------------- */
+.AboutUsImg img{
+  width: 100%;
+}
+
+.AboutUsContent{
+  margin-left: 50px;
+}
+
+/* -------------------------------
+OurService
+------------------------------- */
+.OurServiceContent{
+  margin-top: 50px;
+}
+
+.OurServiceItem{
+  background: #FFFFFF;
+  box-shadow: 0px 0px 199px rgba(141, 141, 141, 0.09), 0px 0px 116.544px rgba(141, 141, 141, 0.0683333), 0px 0px 63.3852px rgba(141, 141, 141, 0.0546667), 0px 0px 32.3375px rgba(141, 141, 141, 0.045), 0px 0px 16.2148px rgba(141, 141, 141, 0.0353333), 0px 0px 7.83102px rgba(141, 141, 141, 0.0216667);
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.OurServiceItem a{
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+
+.OurServiceItem .img img{
+  height: 250px;
+  border-radius: 10px 10px 0 0;
+}
+
+.OurServiceItem .text {
+  padding: 20px;
+  padding-bottom: 40px;
+  position: relative;
+  transition: all linear .5s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.OurServiceItem .text::after{
+  position: absolute;
+  content: '';
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: linear-gradient(90deg, #1488CC 0%, #2B32B2 100%);
+  border-radius: 0 0 10px 10px;
+  opacity: 0;
+  transition: all linear .3s;
+}
+
+.OurServiceItem:hover .text::after{
+  opacity: 1;
+  height: 100%;
+}
+
+.OurServiceItem h4 {
+  font-size: 25px;
+  line-height: 35px;
+  font-weight: 700;
+  color: var(--heading_color);
+  position: relative;
+  z-index: 9;
+  transition: all linear .7s;
+}
+
+.OurServiceItem h4::after{
+  position: absolute;
+  content: '';
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background: var(--heading_color);
+  z-index: 9;
+}
+
+.OurServiceItem:hover .text h4{
+  color: var(--white_color);
+}
+
+.OurServiceItem:hover .text h4::after{
+  background: var(--white_color);
+}
+
+/* -------------------------------
+WorkProcess
+------------------------------- */
+.WorkProcessContent{
+  margin-top: 50px;
+}
+
+.WorkProcessImg img{
+  width: 105%;
+}
+
+/* -------------------------------
+OurPortfolio
+------------------------------- */
+.OurPortfolio{
+  margin-top: 50px;
+}
+
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
     START CarrerPages PART
   --------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-  /* -------------------------------
-  CarrerBanner
-  ------------------------------- */
+/* -------------------------------
+CarrerBanner
+------------------------------- */
 
-  .CarrerBanner{
-    position: relative;
-    
-  }
+.CarrerBanner{
+  position: relative;
+  
+}
 
-  .CarrerBanner .row{
-    min-height: 670px;
-  }
+.CarrerBanner .row{
+  min-height: 670px;
+}
 
-  .CarrerBannerImg {
-    position: absolute;
-    top: 0;
-    right: 0;
-  }
+.CarrerBannerImg {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
 
-  .CarrerBanner .GoPages{
-    margin-top: 50px;
-  }
+.CarrerBanner .GoPages{
+  margin-top: 50px;
+}
 
-  a.bg.getLocation {
-    margin-left: 20px;
-    background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
-  }
+a.bg.getLocation {
+  margin-left: 20px;
+  background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
+}
 
-  a.bg.getLocation:hover {
-    background-position: right center;
-    color: #fff;
-    text-decoration: none;
-  }
+a.bg.getLocation:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
 
   /* -------------------------------
   OurVacancie
@@ -869,14 +1049,14 @@
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
-    START  PART
+  START  PART
   --------------------------------------------------------------------------------------------------------------------------------------------------- */
   
 
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
-    START  PART
+  START  PART
   --------------------------------------------------------------------------------------------------------------------------------------------------- */
   
 

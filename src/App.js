@@ -5,6 +5,7 @@ import CarrerDetails from './Pages/CarrerDetails';
 import CarrerOtherInfo from './Pages/CarrerOtherInfo';
 import CarrerPersonalInfo from './Pages/CarrerPersonalInfo';
 import CarrerSuccessful from './Pages/CarrerSuccessful';
+import Home from './Pages/Home';
 
 import './style.css';
 import './media.css';
@@ -21,7 +22,8 @@ function App() {
       
         <Routes>
 
-          <Route path="/" element={<Carrer />}></Route>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/carrer" element={<Carrer />}></Route>
           <Route path="/carrer-details" element={<CarrerDetails />}></Route>
           <Route path="/carrer-personal-info" element={<CarrerPersonalInfo />}></Route>
           <Route path="/carrer-other-info" element={<CarrerOtherInfo />}></Route>
