@@ -646,14 +646,14 @@ Review
   width: 40%;
   padding: 20px;
   position: relative;
-  min-height: 350px;
+  min-height: 320px;
   text-align: center;
   margin-right: 40px;
 }
 
 .ReviewSliderItem .img img {
   width: 86%;
-  margin-top: -75px;
+  margin-top: -60px;
 }
 
 .ReviewSliderOverlay {
