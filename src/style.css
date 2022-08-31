@@ -485,6 +485,266 @@ OurPortfolio
   margin-top: 50px;
 }
 
+.OurPortfolioTabs{
+  margin-top: 50px;
+}
+
+ul.mb-3.nav.nav-tabs {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.OurPortfolioTabs button {
+  background: no-repeat;
+  border: none !important;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 30px !important;
+  padding: 8px 30px;
+  margin: 0;
+  margin-right: 20px;
+  background: var(--white_color) !important;
+  color: #707070;
+  transition: all linear .3s;
+}
+
+.OurPortfolioTabs button:hover{
+  background: var(--heading_color2) !important;
+  color: var(--white_color);
+}
+
+.OurPortfolioTabs button.active{
+  background: var(--heading_color2) !important;
+  color: var(--white_color) !important;
+}
+
+.OurPortfolioTabs .tab-content{
+  margin-top: 50px;
+}
+
+.OurPortfolioTabsItem{
+  background: #FFFFFF;
+  box-shadow: 0px 24.3075px 46.3px rgba(102, 102, 102, 0.07), 0px 15.7549px 27.1155px rgba(102, 102, 102, 0.0531481), 0px 9.36289px 14.7474px rgba(102, 102, 102, 0.0425185), 0px 4.8615px 7.52375px rgba(102, 102, 102, 0.035), 0px 1.98061px 3.77259px rgba(102, 102, 102, 0.0274815), 0px 0.450139px 1.82199px rgba(102, 102, 102, 0.0168519);
+  border-radius: 10px;
+  padding: 30px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.OurPortfolioTabsItem .text{
+  margin-top: 20px;
+}
+
+.OurPortfolioTabsItem .text h4{
+  font-size: 24px;
+  line-height: 35px;
+  font-weight: 700;
+  color: var(--text_color);
+}
+
+.OurPortfolioTabsItem .text h4 span{
+  color: var(--heading_color2);
+}
+
+.OurPortfolioTabsItem .text h4 span.bg2{
+  color: var(--heading_color);
+}
+
+/* -------------------------------
+WhyUs
+------------------------------- */
+
+.WhyUsContentItem{
+  margin-top: 30px;
+}
+
+.WhyUsContentItemPart{
+  text-align: center;
+  padding: 20px;
+  min-height: 295px;
+}
+
+.WhyUsContentItem .row{
+  --bs-gutter-x: 0;
+}
+
+.WhyUsContentItemPart.fst{
+  border-right: 1px solid #C3C3C3;
+  border-bottom: 1px solid #C3C3C3;
+}
+
+.WhyUsContentItemPart.snd{
+  border-bottom: 1px solid #C3C3C3;
+}
+
+.WhyUsContentItemPart.trd{
+  border-right: 1px solid #C3C3C3;
+}
+
+.WhyUsContentItemPart img {
+  width: 100%;
+  height: 175px;
+}
+
+.WhyUsContentImg{
+  margin-left: 50px;
+}
+
+.WhyUsContentImg img{
+  width: 100%;
+}
+
+/* -------------------------------
+OurClient
+------------------------------- */
+.OurClientContent{
+  margin-top: 50px;
+}
+
+.OurClientItem{
+  background: #FFFFFF;
+  box-shadow: 0px 38.0847px 72.5422px rgba(102, 102, 102, 0.07), 0px 24.6845px 42.4842px rgba(102, 102, 102, 0.0531481), 0px 14.6696px 23.106px rgba(102, 102, 102, 0.0425185), 0px 7.61693px 11.7881px rgba(102, 102, 102, 0.035), 0px 3.10319px 5.91085px rgba(102, 102, 102, 0.0274815), 0px 0.705271px 2.85467px rgba(102, 102, 102, 0.0168519);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.OurClientItem .img{
+  padding: 20px 0;
+}
+
+.OurClientItem img{
+  height: 120px;
+}
+
+.OurClientItem .text{
+  background: linear-gradient(90deg, #1488CC 0%, #2B32B2 100%);
+  border-radius: 0px 0px 15px 15px;
+  padding: 10px 0;
+}
+
+.OurClientItem h4{
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 28px;
+  color: var(--white_color);
+}
+
+
+/* -------------------------------
+Review
+------------------------------- */
+
+.ReviewSliderItem {
+  padding: 50px 40px;
+}
+
+.ReviewSliderItem .img {
+  background: linear-gradient(90deg, #1488CC 0%, #2B32B2 100%);
+  border-radius: 10px;
+  width: 40%;
+  padding: 20px;
+  position: relative;
+  min-height: 350px;
+  text-align: center;
+  margin-right: 40px;
+}
+
+.ReviewSliderItem .img img {
+  width: 86%;
+  margin-top: -75px;
+}
+
+.ReviewSliderOverlay {
+  background: linear-gradient(111.49deg, rgba(255, 255, 255, 0.4) -8.95%, rgba(255, 255, 255, 0.01) 114%);
+  backdrop-filter: blur(45px);
+  border-radius: 10px;
+  padding: 15px 0;
+  position: absolute;
+  bottom: 20px;
+  left: -20px;
+  width: 115%;
+  text-align: center;
+}
+
+.ReviewSliderOverlay h3 {
+  color: var(--white_color);
+  font-size: 25px;
+  line-height: 35px;
+}
+
+.ReviewSliderItem .text{
+  width: 54%;
+}
+
+.ReviewSliderOverlay p {
+  color: #FFE0B1;
+  max-width: 200px;
+  margin: 0 auto;
+  margin-top: 5px;
+  font-size: 17px;
+  line-height: 25px;
+}
+
+.ReviewSliderItem .text p {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+.ReviewSliderItem p span{
+  color: var(--heading_color);
+  font-weight: 700;
+}
+
+.ReviewSliderItem p span:last-child{
+  color: var(--heading_color2);
+}
+
+.ReviewSliderItem h6{
+  font-weight: 700;
+  font-size: 18px;
+  margin-top: 10px;
+  color: var(--text_color);
+}
+
+.swiper-pagination.swiper-pagination-clickable{
+  bottom: 0;
+}
+
+.swiper-pagination-bullet{
+  width: 15px;
+  height: 15px;
+}
+
+.swiper-button-prev{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid #EFEFEF;
+  box-shadow: 0px 0px 115px rgba(0, 0, 0, 0.07), 0px 0px 18.6875px rgba(0, 0, 0, 0.035);
+}
+
+.swiper-button-next{
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #FFFFFF;
+  border: 1px solid #EFEFEF;
+  box-shadow: 0px 0px 115px rgba(0, 0, 0, 0.07), 0px 0px 18.6875px rgba(0, 0, 0, 0.035);
+  right: -2px;
+}
+
+.swiper-button-prev::after, .swiper-button-next:after{
+  font-size: 25px;
+  font-weight: 900;
+}
+
+/* -------------------------------
+CarrerBanner
+------------------------------- */
+
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
     START CarrerPages PART
