@@ -16,7 +16,7 @@ const CarrerDetailsBanner = () => {
 
                     <Row className='d_flex'>
 
-                        <Col sm={5}>
+                        <Col xs={12} lg={5}>
                             
                             <div className="CarrerDetailsBannerContent">
 
@@ -37,7 +37,7 @@ const CarrerDetailsBanner = () => {
 
                         </Col>
 
-                        <Col sm={7}>
+                        <Col xs={12} lg={7}>
                             
                             <div className="CarrerBannerImg">
 

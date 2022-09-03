@@ -38,7 +38,7 @@ const CarrerSuccessfulForm = () => {
 
                                             <div className="GoPages">
                                                 <Link to='/' className='bg'>Back To Homepage</Link>
-                                                <Link to='/' className='bg getLocation'>Back To Job Circular</Link>
+                                                <Link to='/carrer' className='bg getLocation'>Back To Job Circular</Link>
                                             </div>
 
                                         </div>

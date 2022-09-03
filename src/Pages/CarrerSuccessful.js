@@ -10,12 +10,18 @@ const carrerSuccessful = () => {
         
         
         <>
-        
-            <Menubar active='career'></Menubar>
 
-            <CarrerSuccessfulForm></CarrerSuccessfulForm>
+            <div className="Overflow">
 
-            <Footer></Footer>
+                <Menubar active='career'></Menubar>
+
+                <CarrerSuccessfulForm></CarrerSuccessfulForm>
+
+                <Footer></Footer>
+
+            </div>
+
+            
 
         </>
 

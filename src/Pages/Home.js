@@ -10,7 +10,7 @@ import WhyUs from '../Components/HomePages/WhyUs';
 import OurClients from '../Components/HomePages/OurClients';
 import Reviews from '../Components/HomePages/Reviews';
 import OurConcern from '../Components/HomePages/OurConcern';
-import BusinessProfile from '../Components/HomePages/Banner';
+import BusinessProfile from '../Components/HomePages/BusinessProfile';
 import Gallery from '../Components/HomePages/Gallery';
 import HowToStart from '../Components/HomePages/HowToStart';
 
@@ -24,22 +24,28 @@ const Home = () => {
 
         <>
 
-            <Menubar active='home'></Menubar>
+            <div className="Overflow">
 
-            <Banner></Banner>
-            <AboutUs></AboutUs>
-            <OurService></OurService>
-            <WorkProcess></WorkProcess>
-            <OurPortfolio></OurPortfolio>
-            <WhyUs></WhyUs>
-            <OurClients></OurClients>
-            <Reviews></Reviews>
-            {/* <OurConcern></OurConcern>
-            <BusinessProfile></BusinessProfile>
-            <Gallery></Gallery>
-            <HowToStart></HowToStart> */}
+                <Menubar active='home'></Menubar>
 
-            <Footer></Footer>
+                <Banner></Banner>
+                <AboutUs></AboutUs>
+                <OurService></OurService>
+                <WorkProcess></WorkProcess>
+                <OurPortfolio></OurPortfolio>
+                <WhyUs></WhyUs>
+                <OurClients></OurClients>
+                <Reviews></Reviews>
+                <OurConcern></OurConcern>
+                <BusinessProfile></BusinessProfile>
+                {/* <Gallery></Gallery> */}
+                <HowToStart></HowToStart>
+                
+                <Footer></Footer>
+
+            </div>
+
+            
 
         </>
 

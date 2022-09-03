@@ -207,7 +207,11 @@
 
   .CarrerSuccessFull a.bg {
     padding: 10px 50px;
-}
+  }
+
+  .Overflow{
+    overflow-x: hidden !important;
+  }
   
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
     START Menubar PART
@@ -243,7 +247,7 @@
   color: var(--heading_color);
 }
 
-.Menubar .MenuItem ul li.active a{
+.MenuItem ul li.active a{
   color: var(--heading_color);
   font-weight: 700;
 }
@@ -309,6 +313,37 @@
   margin-top: 30px;
 }
 
+.MobileGridContent{
+  text-align: right;
+}
+
+.MobileGridContent button{
+  padding: 0;
+  margin: 0;
+  background: var(--white_color) !important;
+  border: none;
+}
+
+.MobileGridContent button svg {
+  font-size: 35px;
+  color: var(--heading_color);
+}
+
+.btn:hover {
+  color: unset !important;
+  background-color: unset !important;
+  border-color: unset !important;
+  box-shadow: none !important;
+}
+
+.btn-check:focus+.btn, .btn:focus{
+  box-shadow: none !important;
+}
+
+.MobileGrid{
+  display: none;
+}
+
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
@@ -370,6 +405,10 @@ Banner
   line-height: 22px;
   font-size: 16px;
   font-weight: 700;
+}
+
+.Achievement.Mobile{
+  display: none;
 }
 
 /* -------------------------------
@@ -552,6 +591,10 @@ ul.mb-3.nav.nav-tabs {
   color: var(--heading_color);
 }
 
+.OurPortfolioTabsItem img {
+  width: 100%;
+}
+
 /* -------------------------------
 WhyUs
 ------------------------------- */
@@ -658,13 +701,14 @@ Review
 
 .ReviewSliderOverlay {
   background: linear-gradient(111.49deg, rgba(255, 255, 255, 0.4) -8.95%, rgba(255, 255, 255, 0.01) 114%);
+  -webkit-backdrop-filter: blur(45px);
   backdrop-filter: blur(45px);
   border-radius: 10px;
   padding: 15px 0;
   position: absolute;
   bottom: 20px;
-  left: -20px;
-  width: 115%;
+  left: -26px;
+  width: 120%;
   text-align: center;
 }
 
@@ -740,6 +784,94 @@ Review
   font-size: 25px;
   font-weight: 900;
 }
+
+/* -------------------------------
+OurConcern
+------------------------------- */
+.OurConcern{
+  background: url('../public/assets/images/map.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 120px 0;
+}
+
+.OurConcernContent{
+  margin-top: 50px;
+}
+
+.OurConcernImg{
+  border-right: 1px solid #C3C3C3;
+  text-align: center;
+}
+
+.col-3:last-child .OurConcernImg{
+  border-right: 0;
+}
+
+.OurConcernImg img{
+  height: 150px;
+}
+
+
+/* -------------------------------
+BusinessProfile
+------------------------------- */
+.BusinessProfileImg img{
+  width: 100%;
+}
+
+/* -------------------------------
+HowToStart
+------------------------------- */
+
+.HowToStart{
+  position: relative;
+}
+
+.HowToStart .container .row .col-sm-12{
+  background: var(--heading_color);
+  padding: 100px;
+  border-radius: 20px;
+  min-height: 800px;
+}
+
+.HowToStartContent{
+  position: absolute;
+  width: 100%;
+  top: 80px;
+  left: 0;
+  background: linear-gradient(111.49deg, rgba(255, 255, 255, 0.4) -8.95%, rgba(255, 255, 255, 0.01) 114%);
+  backdrop-filter: blur(100px);
+  border-radius: 25px;
+  padding: 50px 100px;
+}
+
+.HowToStartContent h2, .HowToStartContent p{
+  color: var(--white_color);
+}
+
+.HowToStartRightContent{
+  background: #FFFFFF;
+  box-shadow: 0px 42px 80px rgba(102, 102, 102, 0.07), 0px 27.2222px 46.8519px rgba(102, 102, 102, 0.0531481), 0px 16.1778px 25.4815px rgba(102, 102, 102, 0.0425185), 0px 8.4px 13px rgba(102, 102, 102, 0.035), 0px 3.42222px 6.51852px rgba(102, 102, 102, 0.0274815), 0px 0.777778px 3.14815px rgba(102, 102, 102, 0.0168519);
+  border-radius: 15px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.HowToStartRightContent .img{
+  margin-right: 20px;
+}
+
+.HowToStartRightContent p{
+  color: var(--text_color);
+}
+
+.HowToStartImg img{
+  width: 100%;
+}
+
+
 
 /* -------------------------------
 CarrerBanner
@@ -1312,7 +1444,21 @@ a.bg.getLocation:hover {
   START  PART
   --------------------------------------------------------------------------------------------------------------------------------------------------- */
   
-
+  .swiper-container {
+    width: 480px;
+  }
+  
+  @media screen and (min-width: 999px) {
+    .swiper-container {
+      width: 999px;
+    }
+  }
+  
+  @media screen and (min-width: 1000px) {
+    .swiper-container {
+      width: 1000px;
+    }
+  }
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------

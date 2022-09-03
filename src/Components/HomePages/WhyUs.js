@@ -15,14 +15,24 @@ const WhyUs = () => {
 
                     <Container>
 
+                        <Row>
+
+                            <Col xs={8}>
+                                
+                                <div className="header">
+                                    <h2>Why <span>Soft It Care ?</span></h2>
+                                    <p>Our Web Design and Development Company team has strong technical and analytical skills. They are also experts in software languages, platforms, and modern methodologies.</p>
+                                </div>
+
+                            </Col>
+
+                        </Row>
+
                         <Row className='d_flex'>
 
                             <Col sm={6}>
                                 
                                 <div className="WhyUsContent">
-
-                                    <h2>Why <span>Soft It Care ?</span></h2>
-                                    <p>Our Web Design and Development Company team has strong technical and analytical skills. They are also experts in software languages, platforms, and modern methodologies.</p>
 
                                     <div className="WhyUsContentItem">
                                         

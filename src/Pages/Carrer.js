@@ -16,15 +16,19 @@ export const Carrer = () => {
         <>
 
 
-            <Menubar active='career'></Menubar>
+            <div className="Overflow">
 
-            <CarrerBanner></CarrerBanner>
+                <Menubar active='career'></Menubar>
 
-            <OurVacancie></OurVacancie>
+                <CarrerBanner></CarrerBanner>
 
-            <WeOffer></WeOffer>
+                <OurVacancie></OurVacancie>
 
-            <Footer></Footer>
+                <WeOffer></WeOffer>
+
+                <Footer></Footer>
+
+            </div>
 
 
 

@@ -51,7 +51,7 @@ const OurPortfolio = () => {
                                                 
                                                 <Row>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -71,7 +71,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -87,7 +87,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -107,7 +107,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -127,7 +127,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -147,7 +147,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -175,7 +175,7 @@ const OurPortfolio = () => {
                                                 
                                                 <Row>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -195,7 +195,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -211,7 +211,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -231,7 +231,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -251,7 +251,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -271,7 +271,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -299,7 +299,7 @@ const OurPortfolio = () => {
                                                 
                                                 <Row>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -319,7 +319,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -335,7 +335,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -355,7 +355,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -375,7 +375,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -395,7 +395,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -423,7 +423,7 @@ const OurPortfolio = () => {
                                                 
                                                 <Row>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -443,7 +443,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -459,7 +459,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -479,7 +479,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -499,7 +499,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -519,7 +519,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -547,7 +547,7 @@ const OurPortfolio = () => {
                                                
                                                 <Row>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -567,7 +567,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -583,7 +583,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -603,7 +603,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -623,7 +623,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             
@@ -643,7 +643,7 @@ const OurPortfolio = () => {
 
                                                     </Col>
 
-                                                    <Col xs={4}>
+                                                    <Col xs={12} md={6} lg={4}>
 
                                                         <div className="OurPortfolioTabsItem">
                                                             

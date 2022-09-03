@@ -27,9 +27,18 @@ const Reviews = () => {
                                 <div className="ReviewSlider">
 
                                     <Swiper
-                                        slidesPerView={2}
                                         spaceBetween={30}
                                         slidesPerGroup={2}
+                                        breakpoints={{
+                                            999: {
+                                                slidesPerView: 1,
+                                              },
+                                              // when window width is >= 768px
+                                              1000: {
+                                                slidesPerView: 2,
+                                            },
+
+                                          }}
                                         loop={true}
                                         loopFillGroupWithBlank={true}
                                         pagination={{

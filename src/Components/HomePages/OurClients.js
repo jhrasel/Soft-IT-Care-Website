@@ -32,7 +32,7 @@ const OurClients = () => {
 
                             <Row>
                                 
-                                <Col sm={2}>
+                                <Col sm={4} lg={2}>
 
                                     <div className="OurClientItem">
 
@@ -41,14 +41,14 @@ const OurClients = () => {
                                         </div>
 
                                         <div className="text">
-                                            <h4>Bangladesh Government</h4>
+                                            <h4>Bangladesh <br /> Government</h4>
                                         </div>
 
                                     </div>
 
                                 </Col>
 
-                                <Col sm={2}>
+                                <Col sm={4} lg={2}>
 
                                     <div className="OurClientItem">
 
@@ -64,7 +64,7 @@ const OurClients = () => {
 
                                 </Col>
 
-                                <Col sm={2}>
+                                <Col sm={4} lg={2}>
 
                                     <div className="OurClientItem">
 
@@ -80,7 +80,7 @@ const OurClients = () => {
 
                                 </Col>
 
-                                <Col sm={2}>
+                                <Col sm={4} lg={2}>
 
                                     <div className="OurClientItem">
 
@@ -96,7 +96,7 @@ const OurClients = () => {
 
                                 </Col>
 
-                                <Col sm={2}>
+                                <Col sm={4} lg={2}>
 
                                     <div className="OurClientItem">
 
@@ -105,14 +105,14 @@ const OurClients = () => {
                                         </div>
 
                                         <div className="text">
-                                            <h4>UCC University Admission</h4>
+                                            <h4>UCC University <br /> Admission</h4>
                                         </div>
 
                                     </div>
 
                                 </Col>
 
-                                <Col sm={2}>
+                                <Col sm={4} lg={2}>
 
                                     <div className="OurClientItem">
 
