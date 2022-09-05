@@ -7,6 +7,7 @@ import CarrerPersonalInfo from './Pages/CarrerPersonalInfo';
 import CarrerSuccessful from './Pages/CarrerSuccessful';
 import Home from './Pages/Home';
 
+
 import './style.css';
 import './media.css';
 

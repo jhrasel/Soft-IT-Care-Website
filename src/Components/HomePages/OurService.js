@@ -34,7 +34,7 @@ const OurService = () => {
                         
                         <Row>
 
-                            <Col sm={3}>
+                            <Col sm={4} lg={3}>
                                 
                                 <div className="OurServiceItem">
 
@@ -52,7 +52,7 @@ const OurService = () => {
 
                             </Col>
 
-                            <Col sm={3}>
+                            <Col sm={4} lg={3}>
                                 
                                 <div className="OurServiceItem">
 
@@ -70,7 +70,7 @@ const OurService = () => {
 
                             </Col>
 
-                            <Col sm={3}>
+                            <Col sm={4} lg={3}>
                                 
                                 <div className="OurServiceItem">
 
@@ -88,7 +88,7 @@ const OurService = () => {
 
                             </Col>
 
-                            <Col sm={3}>
+                            <Col sm={4} lg={3}>
                                 
                                 <div className="OurServiceItem">
 
@@ -106,7 +106,7 @@ const OurService = () => {
 
                             </Col>
 
-                            <Col sm={3}>
+                            <Col sm={4} lg={3}>
                                 
                                 <div className="OurServiceItem">
 
@@ -124,7 +124,7 @@ const OurService = () => {
 
                             </Col>
 
-                            <Col sm={3}>
+                            <Col sm={4} lg={3}>
                                 
                                 <div className="OurServiceItem">
 
@@ -142,7 +142,7 @@ const OurService = () => {
 
                             </Col>
 
-                            <Col sm={3}>
+                            <Col sm={4} lg={3}>
                                 
                                 <div className="OurServiceItem">
 
@@ -160,7 +160,7 @@ const OurService = () => {
 
                             </Col>
 
-                            <Col sm={3}>
+                            <Col sm={4} lg={3}>
                                 
                                 <div className="OurServiceItem">
 

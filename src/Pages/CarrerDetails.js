@@ -13,16 +13,20 @@ const CarrerDetails = () => {
 
         <>
         
+            <div className="Overflow">
 
-            <Menubar active='career'></Menubar>
+                <Menubar active='career'></Menubar>
 
-            <CarrerDetailsBanner></CarrerDetailsBanner>
+                <CarrerDetailsBanner></CarrerDetailsBanner>
 
-            <WhoWeAre></WhoWeAre>
+                <WhoWeAre></WhoWeAre>
 
-            <VacancyDetails></VacancyDetails>
+                <VacancyDetails></VacancyDetails>
 
-            <Footer></Footer>
+                <Footer></Footer>
+
+
+            </div>
 
 
         </>

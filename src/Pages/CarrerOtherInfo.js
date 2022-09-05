@@ -9,13 +9,19 @@ const CarrerOtherInfo = () => {
     return (
 
 
-        <>
+        <> 
+
+            <div className="Overflow">
+
+                <Menubar active='career'></Menubar>
+
+                <OtherInfoForm></OtherInfoForm>
+
+                <Footer></Footer>
+
+            </div>
         
-            <Menubar active='career'></Menubar>
-
-            <OtherInfoForm></OtherInfoForm>
-
-            <Footer></Footer>
+            
 
         </>
 

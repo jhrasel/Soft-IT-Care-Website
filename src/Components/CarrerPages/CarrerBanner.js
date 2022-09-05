@@ -16,7 +16,7 @@ export const CarrerBanner = () => {
 
                     <Row className='d_flex'>
 
-                        <Col sm={5}>
+                        <Col xs={12} lg={5}>
                             
                             <div className="CarrerBannerContent">
 
@@ -32,7 +32,7 @@ export const CarrerBanner = () => {
 
                         </Col>
 
-                        <Col sm={7}>
+                        <Col xs={12} lg={7}>
                             
                             <div className="CarrerBannerImg">
 

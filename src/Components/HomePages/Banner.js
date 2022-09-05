@@ -18,7 +18,7 @@ const Banner = () => {
 
                         <Row className='d_flex'>
 
-                            <Col sm={6}>
+                            <Col xs={12} lg={6}>
                                 
                                 <div className="BannerContent">
 
@@ -34,11 +34,11 @@ const Banner = () => {
 
                             </Col>
 
-                            <Col sm={6}>
+                            <Col xs={12} lg={6}>
                                 
                                 <div className="BannerImg">
 
-                                    <img src="assets/images/home_banner.png" alt="Carrer_banner" />
+                                    <img src="assets/images/Home_banner.png" alt="Carrer_banner" />
 
                                 </div>
 
@@ -47,7 +47,7 @@ const Banner = () => {
                         </Row>
 
                         {/*Achievement */}
-                        <div className="Achievement">
+                        <div className="Achievement Desktop">
 
                             <Row>
 
@@ -128,6 +128,109 @@ const Banner = () => {
                                 </Col>    
 
                                 <Col>
+                                
+                                    <div className="AchievementItem">
+                                        
+                                        <div className="img">
+                                            <img src="assets/images/achievementItem-5.png" alt="Carrer_banner" />
+                                        </div>
+
+                                        <div className="text d_flex">
+
+                                            <h3>30+</h3>
+                                            <p>Overseas Companies</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </Col>                    
+
+                            </Row>
+
+                        </div>
+
+                        <div className="Achievement Mobile">
+
+                            <Row className='Mobile'>
+
+                                <Col xs={12} md={6}>
+                                
+                                    <div className="AchievementItem">
+                                        
+                                        <div className="img">
+                                            <img src="assets/images/achievementItem-1.png" alt="Carrer_banner" />
+                                        </div>
+
+                                        <div className="text d_flex">
+
+                                            <h3>600+</h3>
+                                            <p>Happy Clients</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </Col>
+
+                                <Col xs={12} md={6}>
+                                
+                                    <div className="AchievementItem">
+                                        
+                                        <div className="img">
+                                            <img src="assets/images/achievementItem-2.png" alt="Carrer_banner" />
+                                        </div>
+
+                                        <div className="text d_flex">
+
+                                            <h3>03</h3>
+                                            <p>Years Of Experience</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </Col>    
+
+                                <Col xs={12} md={6}>
+                                
+                                    <div className="AchievementItem">
+                                        
+                                        <div className="img">
+                                            <img src="assets/images/achievementItem-3.png" alt="Carrer_banner" />
+                                        </div>
+
+                                        <div className="text d_flex">
+
+                                            <h3>1000+</h3>
+                                            <p>Project Delivered</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </Col>    
+
+                                <Col xs={12} md={6}>
+                                
+                                    <div className="AchievementItem">
+                                        
+                                        <div className="img">
+                                            <img src="assets/images/achievementItem-4.png" alt="Carrer_banner" />
+                                        </div>
+
+                                        <div className="text d_flex">
+
+                                            <h3>50+</h3>
+                                            <p>Expert Tech Team Members</p>
+
+                                        </div>
+
+                                    </div>
+
+                                </Col>    
+
+                                <Col xs={12} md={6}>
                                 
                                     <div className="AchievementItem">
                                         

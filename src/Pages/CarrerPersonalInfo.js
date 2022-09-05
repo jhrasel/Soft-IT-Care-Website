@@ -11,12 +11,18 @@ const CarrerPersonalInfo = () => {
 
         
         <>
-        
-            <Menubar active='career'></Menubar>
 
-            <PersonalInfoForm></PersonalInfoForm>
+            <div className="Overflow">
 
-            <Footer></Footer>
+                <Menubar active='career'></Menubar>
+
+                <PersonalInfoForm></PersonalInfoForm>
+
+                <Footer></Footer>
+
+            </div>
+
+            
 
         </>
 

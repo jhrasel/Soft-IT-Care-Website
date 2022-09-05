@@ -24,7 +24,7 @@ const Footer = () => {
 
                     <Row className="justify-content-center">
 
-                        <Col sm={8}>
+                        <Col sm={12}>
 
                             <div className="MenuItem">
 
@@ -49,7 +49,7 @@ const Footer = () => {
 
                         <Row className="">
 
-                            <Col sm={4}>
+                            <Col sm={12} lg={4}>
 
                                 <div className="FooterItem left">
 
@@ -83,13 +83,12 @@ const Footer = () => {
 
                             </Col>
 
-                            <Col sm={8}>
+                            <Col sm={12} lg={8}>
 
                                 <div className="FooterItem right">
                                     
                                     <h3>
                                         Our All Offices Branch
-                                        <img src="assets/images/branch_icon.png" alt="" />
                                     </h3>
 
                                     <div className="OfficeAddress d_flex">

@@ -18,6 +18,9 @@
     .container {
         max-width: 1200px ;
     }
+    .section_gaps {
+        padding-top: 120px;
+    }
     .Menubar {
         width: calc(100% - 120px);
         margin-top: 50px;
@@ -131,7 +134,79 @@
     .CarrerSuccessFull p {
         max-width: 780px;
     }
-    
+    .AchievementItem h3 {
+        padding-right: 6px;
+        margin-right: 6px;
+        width: 38%;
+        font-size: 20px;
+    }
+    .AchievementItem p {
+        margin-top: 0;
+        width: 60%;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .AchievementItem {
+        padding: 15px;
+        min-height: 205px;
+    }
+    .AchievementItem img {
+        width: 80px;
+        height: 80px;
+    }
+    .OurServiceItem .img img {
+        height: 150px;
+    }
+    .OurServiceItem h4 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    .OurServiceItem .text {
+        padding: 15px;
+        padding-bottom: 30px;
+    }
+    .OurPortfolioTabsItem .text h4 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .WhyUsContentItemPart img {
+        width: 100%;
+        height: 150px;
+    }
+    .WhyUsContentItemPart {
+        min-height: 250px;
+    }
+    .OurClientItem img {
+        height: 100px;
+    }
+    .OurClientItem h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .ReviewSliderItem .text p {
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .container h3 {
+        font-size: 20px;
+        line-height: 30px;
+    }
+    .container p {
+        font-size: 14px;
+        line-height: 22px;
+    }
+    .ReviewSliderOverlay {
+        left: -20px;
+    }
+    .ReviewSliderItem .img {
+        min-height: 275px;
+    }
+    .OurConcernImg img {
+        height: 120px;
+    }
+    .HowToStart .container .row .col-sm-12 {
+        min-height: 720px;
+    }
 
 
 }
@@ -228,7 +303,35 @@
     .CarrerBanner .row {
         min-height: 460px;
     }
-
+    .Achievement .row {
+        --bs-gutter-x: 15px;
+    }
+    .AchievementItem {
+        padding: 10px;
+    }
+    .container p {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .OurClientContent .row {
+        --bs-gutter-x: 15px;
+    }
+    .OurClientItem h4 {
+        font-size: 14px;
+    }
+    .ReviewSliderItem {
+        padding: 50px 25px;
+    }
+    .ReviewSliderItem .img img {
+        width: 105%;
+        margin-top: -60px;
+    }
+    .OurConcern {
+        padding: 100px 0;
+    }
+    .HowToStart .container .row .col-sm-12 {
+        min-height: 690px;
+    }
 
 }
 
@@ -236,7 +339,202 @@
 /* // XX-Large devices (larger desktops, 1280px and up) */
 @media (max-width: 1024px) {
 
-   
+    .container {
+        max-width: 90%;
+    }
+    .DesktopGrid{
+        display: none;
+    }
+    .MobileGrid{
+        display: block;
+    }
+    .MenuItem {
+        text-align: left;
+    }
+    .MenuItem ul{
+        padding: 30px;
+        margin: 0;
+    }
+    .MenuItem ul li{
+        display: block;
+        margin-bottom: 15px;
+        padding-bottom: 15px;
+        border-bottom: 1px solid #ddd;
+    }
+    .MenuItem ul li:last-child{
+        border: none;
+    }
+    .MenuItem ul li a{
+        font-size: 18px;
+    }
+    .Banner .col-lg-6:first-child, .CarrerBanner .col-lg-5{
+        order: 2;
+    }
+    .Banner .col-lg-6:last-child, .CarrerBanner .col-lg-7{
+        order: 1;
+    }
+    .BusinessProfile .col-lg-6:first-child{
+        order: 2;
+    }
+    .BusinessProfile .col-lg-6:last-child{
+        order: 1;
+    }
+    .BannerContent {
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    .Achievement.Mobile{
+        display: block;
+    }
+    .Achievement.Desktop{
+        display: none;
+    }
+    .AchievementItem {
+        padding: 20px;
+        margin-bottom: 30px;
+    }
+    .AboutUsContent {
+        margin-left: 30px;
+    }
+    .OurPortfolioTabs button {
+        font-size: 14px;
+        margin-right: 9px;
+        padding: 8px 20px;
+    }
+    .OurPortfolioTabsItem {
+        padding: 15px;
+    }
+    .OurPortfolioTabsItem .text h4 {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .WhyUsContentItemPart img {
+        width: 100%;
+        height: 80px;
+    }
+    .WhyUsContentItemPart {
+        min-height: auto;
+        padding: 15px;
+    }
+    .OurClientItem {
+        margin-bottom: 30px;
+    }
+    .OurConcernImg {
+        border-right: 0;
+        margin-bottom: 30px;
+    }
+    .BusinessProfile{
+        text-align: center;
+    }
+    .HowToStartContent {
+        border-radius: 15px;
+        padding: 30px;
+    }
+    .HowToStartRightContent {
+        padding: 15px;
+    }
+    .HowToStartRightContent {
+        display: block;
+        text-align: center;
+    }
+    .HowToStartRightContent .img {
+        margin-right: 0;
+    }
+    .HowToStartRightContent .img img {
+        height: 65px;
+    }
+    .HowToStart .container .row .col-sm-12 {
+        min-height: 660px;
+    }
+    .Footer .MenuItem{
+        text-align: center;
+    }
+    .Footer .MenuItem ul{
+        padding: 0;
+    }
+    .Footer .MenuItem li {
+        display: inline-block;
+        border: none;
+    }
+    .FooterContent {
+        padding: 40px;
+        margin-top: 0;
+    }
+    .Footer .left {
+        margin-right: 0;
+        text-align: center;
+    }
+    .Footer .SocialIcon {
+        justify-content: center;
+        margin-top: 30px;
+    }
+    .Footer .right {
+        text-align: center;
+        margin-top: 60px;
+    }
+    .OfficeAddressItem .text p {
+        font-size: 14px;
+    }
+    .TinyFooter .Support {
+        display: block;
+        text-align: center;
+    }
+    .TinyFooter .svg {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+    .TinyFooter .svg svg{
+        font-size: 20px;
+    }
+    .TinyFooter {
+        padding-top: 70px;
+        padding-bottom: 30px;
+    }
+    .CarrerBannerImg {
+        position: unset;
+        width: 100%;
+    }
+    .CarrerBannerContent {
+        text-align: center;
+        margin-top: 50px;
+    }
+    .OurVacancieItem .text {
+        padding: 20px;
+    }
+    .container h3 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+    .OurVacancieItem ul li {
+        font-size: 15px;
+        line-height: 22px;
+    }
+    .imgHeight img {
+        height: 50px;
+        width: 50px;
+    }
+    .WeOfferContent{
+        display: none;
+    }
+    .OurVacancie .section_gaps {
+        padding-top: 0;
+    }
+    .CarrerBannerImg img {
+        width: 100%;
+    }
+    .CarrerDetailsBannerContent {
+        margin-top: 50px;
+    }
+    .VideoPlayerItem div{
+        width: 100% !important;
+        height: 350px !important;
+    }
+    .PersonalInfoFormContent {
+        padding: 50px;
+    }
 
 
 }
@@ -245,5 +543,165 @@
 
 /* // XX-Large devices (larger desktops, 1280px and up) */
 @media (max-width: 768px) {
+
+    .Menubar {
+        width: calc(100% - 50px);
+        margin-top: 30px;
+    }
+    .MenubarContent {
+        position: relative;
+    }
+    .MobileGridContent {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+    .MenubarContent img {
+        height: 70px;
+    }
+    .offcanvas.offcanvas-start.show {
+        width: 50%;
+    }
+    .offcanvas.offcanvas-start.show {
+        width: 80%;
+    }
+    .container h1 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+    .GoPages a.bg {
+        display: block;
+    }
+    .GoPages a.bg.getLocation{
+        margin-left: 0;
+        margin-top: 20px;
+    }
+    .AchievementItem .text {
+        display: block;
+    }
+    .AchievementItem h3 {
+        width: 100%;
+        font-size: 25px;
+        text-align: center;
+        border: 0;
+        padding: 0;
+        margin: 0;
+    }
+    .AchievementItem p {
+        margin-top: 10px;
+        width: 100%;
+        font-size: 15px;
+        line-height: 20px;
+        text-align: center;
+    }
+    .AboutUsContent {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    .container p {
+        font-size: 15px;
+        line-height: 26px;
+    }
+    .OurPortfolioTabs li {
+        margin-bottom: 20px;
+    }
+    .WhyUsContentImg {
+        margin-left: 0;
+        margin-top: 50px;
+    }
+    .ReviewSliderItem {
+        display: block;
+    }
+    .ReviewSliderItem .img {
+        min-height: 275px;
+        width: 100%;
+    }
+    .ReviewSliderItem .img img {
+        width: 100%;
+        margin-top: -50px;
+    }
+    .ReviewSliderItem .text {
+        width: 100%;
+        margin-top: 50px;
+    }
+    .swiper-button-prev, .swiper-button-next{
+        display: none;
+    }
+    .HowToStartContent .first.col-lg-6 {
+        order: 2;
+    }
+    .HowToStartContent .secend.col-lg-6{
+        order: 1;
+        margin-top: 30px;
+    }
+    .container h2 {
+        font-size: 26px;
+        line-height: 35px;
+    }
+    .HowToStart .container .row .col-sm-12 {
+        min-height: 960px;
+        padding: 30px;
+    }
+    .Footer .MenuItem li {
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+    }
+    .FooterContent {
+        padding: 40px 25px;
+        margin-top: 0;
+    }
+    .OfficeAddresss {
+        display: block;
+    }
+    .OfficeAddressItem {
+        width: 100%;
+    }
+    .OfficeAddressItem:nth-child(1) {
+        border-radius: 10px 10px 0 0;
+    }
+    .OfficeAddressItem:nth-child(2) {
+        width: 100%;
+    }
+    .OfficeAddressItem:nth-child(3) {
+        width: 100%;
+        border-radius: 0 0 10px 10px;
+    }
+    .TinyFooter .Support {
+        margin-bottom: 35px;
+    }
+    .OurVacancie {
+        margin-top: 100px;
+    }
+    .WhyUsContentItemPart {
+        padding: 15px 0;
+    }
+    .OfficeAddress {
+        display: block;
+    }
+    .HowToStartContent {
+        border-radius: 15px;
+        padding: 50px 10px;
+        top: 50px;
+    }
+    .PersonalInfoFormContent {
+        padding: 20px;
+    }
+    .PersonalInfoFormContent h2 {
+        font-size: 22px;
+    }
+    .CustomeInput.agree {
+        align-items: self-start;
+    }
+    .checkbox.bounce {
+        margin-top: 2px;
+    }
+    .VideoPlayerItem div{
+        width: 100% !important;
+        height: 250px !important;
+      }
+    
+
+
 
 }
