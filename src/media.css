@@ -205,7 +205,7 @@
         height: 120px;
     }
     .HowToStart .container .row .col-sm-12 {
-        min-height: 720px;
+        min-height: 830px;
     }
 
 
@@ -332,6 +332,7 @@
     .HowToStart .container .row .col-sm-12 {
         min-height: 690px;
     }
+    
 
 }
 
@@ -640,7 +641,7 @@
         line-height: 35px;
     }
     .HowToStart .container .row .col-sm-12 {
-        min-height: 960px;
+        min-height: 670px;
         padding: 30px;
     }
     .Footer .MenuItem li {
@@ -699,9 +700,16 @@
     .VideoPlayerItem div{
         width: 100% !important;
         height: 250px !important;
-      }
+    }
     
 
 
 
+}
+
+/* // XX-Large devices (larger desktops, 1280px and up) */
+@media (max-width: 767px) {
+    .HowToStart .container .row .col-sm-12 {
+        min-height: 960px;
+    }
 }
