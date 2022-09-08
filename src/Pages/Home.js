@@ -13,6 +13,7 @@ import OurConcern from '../Components/HomePages/OurConcern';
 import BusinessProfile from '../Components/HomePages/BusinessProfile';
 import Gallery from '../Components/HomePages/Gallery';
 import HowToStart from '../Components/HomePages/HowToStart';
+import Blog from '../Components/HomePages/Blog';
 
 const Home = () => {
 
@@ -39,13 +40,12 @@ const Home = () => {
                 <OurConcern></OurConcern>
                 <BusinessProfile></BusinessProfile>
                 {/* <Gallery></Gallery> */}
+                <Blog></Blog>
                 <HowToStart></HowToStart>
                 
                 <Footer></Footer>
 
             </div>
-
-            
 
         </>
 

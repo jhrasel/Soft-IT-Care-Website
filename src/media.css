@@ -205,7 +205,10 @@
         height: 120px;
     }
     .HowToStart .container .row .col-sm-12 {
-        min-height: 720px;
+        min-height: 830px;
+    }
+    .BlogBanner .CarrerBannerImg img {
+        width: 65%;
     }
 
 
@@ -332,6 +335,11 @@
     .HowToStart .container .row .col-sm-12 {
         min-height: 690px;
     }
+    .BlogBanner .CarrerBannerImg img {
+        width: 85%;
+    }
+    
+    
 
 }
 
@@ -535,6 +543,12 @@
     .PersonalInfoFormContent {
         padding: 50px;
     }
+    .BlogBanner .CarrerBannerImg {
+        text-align: left;
+    }
+    .BlogBanner .CarrerBannerImg img {
+        width: 55%;
+    }
 
 
 }
@@ -640,7 +654,7 @@
         line-height: 35px;
     }
     .HowToStart .container .row .col-sm-12 {
-        min-height: 960px;
+        min-height: 670px;
         padding: 30px;
     }
     .Footer .MenuItem li {
@@ -699,9 +713,22 @@
     .VideoPlayerItem div{
         width: 100% !important;
         height: 250px !important;
-      }
+    }
+    .BlogBanner .CarrerBannerImg {
+        text-align: center;
+    }
+    .BlogBanner .CarrerBannerImg img{
+        width: 100%;
+    }
     
 
 
 
+}
+
+/* // XX-Large devices (larger desktops, 1280px and up) */
+@media (max-width: 767px) {
+    .HowToStart .container .row .col-sm-12 {
+        min-height: 960px;
+    }
 }

@@ -1,9 +1,31 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import axios from 'axios';
+
 
 
 const OurVacancie = () => {
+
+    const [jobList, setJobList] = useState([]);
+
+    useEffect(() => {
+
+        axios.get(`https://career.softitdev.xyz/api/v1/job/list`).then(({data})=>{
+
+            setJobList(data.data);
+
+        })
+
+    },[])
+
+    let handleLink = (jobId) => {
+
+        axios.get(`https://career.softitdev.xyz/api/v1/job/`+ jobId).then(({data})=>{
+
+        })
+
+    }
 
 
     return (
@@ -31,125 +53,34 @@ const OurVacancie = () => {
 
                         <Row>
 
-                            <Col sm={4}>
+                            {
 
-                                <div className="OurVacancieItem">
-                                    
-                                    <div className="text">
-                                        <h3>Senior Software Engineer</h3>
-                                        <ul>
-                                            <li> <span>Salary:</span> BDT 50,000 - BDT 80,000</li>
-                                            <li> <span>Experience:</span> 4 Years +</li>
-                                        </ul>
-                                    </div>
+                                jobList.map((item, key)=>(
 
-                                    <div className="view_details">
-                                        <Link to='/carrer-details' className='bg'>View Details</Link>
-                                    </div>
+                                    <Col sm={4} key={key}>
 
-                                </div>
+                                        <div className="OurVacancieItem">
+                                            
+                                            <div className="text">
+                                                <h3>{item.title}</h3>
+                                                <ul>
+                                                    <li> <span>Salary:</span> BDT {item.min_salary} - BDT {item.max_salary}</li>
+                                                    <li> <span>Experience:</span> {item.experience}</li>
+                                                </ul>
+                                            </div>
 
-                            </Col>
+                                            <div className="view_details">
+                                                <Link to='/carrer-details' onClick={() => handleLink(item.id)} className='bg'>View Details</Link>
+                                            </div>
 
-                            <Col sm={4}>
+                                        </div>
 
-                                <div className="OurVacancieItem">
-                                    
-                                    <div className="text">
-                                        <h3>Senior Software Engineer</h3>
-                                        <ul>
-                                            <li> <span>Salary:</span> BDT 50,000 - BDT 80,000</li>
-                                            <li> <span>Experience:</span> 4 Years +</li>
-                                        </ul>
-                                    </div>
+                                    </Col>
 
-                                    <div className="view_details">
-                                        <Link to='/carrer-details' className='bg'>View Details</Link>
-                                    </div>
+                                ))
 
-                                </div>
+                            }
 
-                            </Col>
-
-                            <Col sm={4}>
-
-                                <div className="OurVacancieItem">
-                                    
-                                    <div className="text">
-                                        <h3>Senior Software Engineer</h3>
-                                        <ul>
-                                            <li> <span>Salary:</span> BDT 50,000 - BDT 80,000</li>
-                                            <li> <span>Experience:</span> 4 Years +</li>
-                                        </ul>
-                                    </div>
-
-                                    <div className="view_details">
-                                        <Link to='/carrer-details' className='bg'>View Details</Link>
-                                    </div>
-
-                                </div>
-
-                            </Col>
-
-                            <Col sm={4}>
-
-                                <div className="OurVacancieItem">
-                                    
-                                    <div className="text">
-                                        <h3>Senior Software Engineer</h3>
-                                        <ul>
-                                            <li> <span>Salary:</span> BDT 50,000 - BDT 80,000</li>
-                                            <li> <span>Experience:</span> 4 Years +</li>
-                                        </ul>
-                                    </div>
-
-                                    <div className="view_details">
-                                        <Link to='/carrer-details' className='bg'>View Details</Link>
-                                    </div>
-
-                                </div>
-
-                            </Col>
-
-                            <Col sm={4}>
-
-                                <div className="OurVacancieItem">
-                                    
-                                    <div className="text">
-                                        <h3>Senior Software Engineer</h3>
-                                        <ul>
-                                            <li> <span>Salary:</span> BDT 50,000 - BDT 80,000</li>
-                                            <li> <span>Experience:</span> 4 Years +</li>
-                                        </ul>
-                                    </div>
-
-                                    <div className="view_details">
-                                        <Link to='/carrer-details' className='bg'>View Details</Link>
-                                    </div>
-
-                                </div>
-
-                            </Col>
-
-                            <Col sm={4}>
-
-                                <div className="OurVacancieItem">
-                                    
-                                    <div className="text">
-                                        <h3>Senior Software Engineer</h3>
-                                        <ul>
-                                            <li> <span>Salary:</span> BDT 50,000 - BDT 80,000</li>
-                                            <li> <span>Experience:</span> 4 Years +</li>
-                                        </ul>
-                                    </div>
-
-                                    <div className="view_details">
-                                        <Link to='/carrer-details' className='bg'>View Details</Link>
-                                    </div>
-
-                                </div>
-
-                            </Col>
                             
 
                         </Row>
