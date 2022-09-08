@@ -1290,7 +1290,86 @@ a.bg.getLocation:hover {
       transform: scale(1);
    }
  }
- 
+
+
+
+
+/* ---------------------------------------------------------------------------------------------------------------------------------------------------
+  START Blog PART
+--------------------------------------------------------------------------------------------------------------------------------------------------- */
+.BlogContent{
+  margin-top: 50px;
+}
+
+.BlogSliderItem{
+  background: #FFFFFF;
+  border-radius: 10px;
+}
+
+.BlogSliderItem .img{
+  padding: 10px;
+}
+
+.BlogSliderItem img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.BlogSliderItem .text{
+  padding: 20px;
+}
+
+.BlogSliderItem .text span{
+  color: var(--text_color2);
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.BlogSliderItem .text svg{
+  color: var(--text_color2);
+  font-size: 18px;
+}
+
+.BlogSliderItem .text h6{
+  color: var(--text_color);
+  font-weight: 700;
+  margin-top: 15px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.BlogSliderItem a{
+  width: 100%;
+  border-radius: 0 0 20px 20px;
+  margin-top: 10px;
+}
+
+.BlogSliderItem .swiper.swiper-initialized {
+  padding: 0 15px;
+}
+
+.BlogSliderItem  .swiper-button-prev {
+  left: 0px;
+  right: auto;
+}
+
+.BlogSliderItem  .swiper-button-prev {
+  left: auto;
+  right: 0px;
+}
+
+.BlogBanner .CarrerBannerImg {
+  text-align: right;
+}
+
+.BlogBanner .CarrerBannerImg img{
+  width: 88%;
+}
+
+.BlogItem .BlogSliderItem {
+  margin-bottom: 30px;
+}
+
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
     START Footer PART
@@ -1400,13 +1479,13 @@ a.bg.getLocation:hover {
     padding-bottom: 45px;
     margin-top: -30px;
   }
-  
+
   .Footer .section_gaps {
     padding-top: 80px;
 }
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
-    START Tiny Footer PART
+  START Tiny Footer PART
   --------------------------------------------------------------------------------------------------------------------------------------------------- */
   
 .TinyFooter .svg{

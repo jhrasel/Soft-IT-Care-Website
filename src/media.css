@@ -207,6 +207,9 @@
     .HowToStart .container .row .col-sm-12 {
         min-height: 830px;
     }
+    .BlogBanner .CarrerBannerImg img {
+        width: 65%;
+    }
 
 
 }
@@ -332,6 +335,10 @@
     .HowToStart .container .row .col-sm-12 {
         min-height: 690px;
     }
+    .BlogBanner .CarrerBannerImg img {
+        width: 85%;
+    }
+    
     
 
 }
@@ -536,6 +543,12 @@
     .PersonalInfoFormContent {
         padding: 50px;
     }
+    .BlogBanner .CarrerBannerImg {
+        text-align: left;
+    }
+    .BlogBanner .CarrerBannerImg img {
+        width: 55%;
+    }
 
 
 }
@@ -700,6 +713,12 @@
     .VideoPlayerItem div{
         width: 100% !important;
         height: 250px !important;
+    }
+    .BlogBanner .CarrerBannerImg {
+        text-align: center;
+    }
+    .BlogBanner .CarrerBannerImg img{
+        width: 100%;
     }
     
 

@@ -48,6 +48,7 @@ const Menubar = (props) => {
                                         <li className={props.active == 'portfolio' && 'active'}> <Link to=''>Portfolio</Link> </li>
                                         <li className={props.active == 'aboutus' && 'active'}> <Link to=''>About Us</Link> </li>
                                         <li className={props.active == 'career' && 'active'}> <Link to='/carrer'>Career</Link> </li>
+                                        <li className={props.active == 'blog' && 'active'}> <Link to='/blog'>Blog</Link> </li>
                                         <li className={props.active == 'contactus' && 'active'}> <Link to=''>Contact Us</Link> </li>
 
                                     </ul>
@@ -99,6 +100,7 @@ const Menubar = (props) => {
                                                 <li className={props.active == 'portfolio' && 'active'}> <Link to=''>Portfolio</Link> </li>
                                                 <li className={props.active == 'aboutus' && 'active'}> <Link to=''>About Us</Link> </li>
                                                 <li className={props.active == 'career' && 'active'}> <Link to='/carrer'>Career</Link> </li>
+                                                <li className={props.active == 'blog' && 'active'}> <Link to='/blog'>Blog</Link> </li>
                                                 <li className={props.active == 'contactus' && 'active'}> <Link to=''>Contact Us</Link> </li>
 
                                             </ul>

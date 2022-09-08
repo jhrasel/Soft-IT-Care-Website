@@ -10,6 +10,7 @@ import Home from './Pages/Home';
 
 import './style.css';
 import './media.css';
+import Blog from './Pages/Blog';
 
 function App() {
 
@@ -29,6 +30,7 @@ function App() {
           <Route path="/carrer-personal-info" element={<CarrerPersonalInfo />}></Route>
           <Route path="/carrer-other-info" element={<CarrerOtherInfo />}></Route>
           <Route path="/carrer-successfull" element={<CarrerSuccessful />}></Route>
+          <Route path="/blog" element={<Blog />}></Route>
 
         </Routes>
 
