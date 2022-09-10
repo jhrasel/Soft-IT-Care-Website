@@ -25,6 +25,9 @@ const BlogItem = () => {
 
                                 <div className="img">
                                     <img src="assets/images/blog-1.png" alt="" />
+                                    <div className="overlay">
+                                        <h6>Technology</h6>
+                                    </div>
                                 </div>
                                 
                                 <div className="text">
@@ -37,8 +40,8 @@ const BlogItem = () => {
                                     <h6>Nunc tincidunt dolor et sollicitudin et tincidunt bibendum.....</h6>
 
                                 </div>
-
-                                <a href="" className='bg'>Read More</a>
+                                
+                                <Link to='/blog-details' className='bg'>Read More</Link>
 
                             </div>
 
@@ -63,7 +66,7 @@ const BlogItem = () => {
 
                                 </div>
 
-                                <a href="" className='bg'>Read More</a>
+                                <Link to='/blog-details' className='bg'>Read More</Link>
 
                             </div>
 
@@ -88,7 +91,7 @@ const BlogItem = () => {
 
                                 </div>
 
-                                <a href="" className='bg'>Read More</a>
+                                <Link to='/blog-details' className='bg'>Read More</Link>
 
                             </div>
 
@@ -113,7 +116,7 @@ const BlogItem = () => {
 
                                 </div>
 
-                                <a href="" className='bg'>Read More</a>
+                                <Link to='/blog-details' className='bg'>Read More</Link>
 
                             </div>
 
@@ -138,7 +141,7 @@ const BlogItem = () => {
 
                                 </div>
 
-                                <a href="" className='bg'>Read More</a>
+                                <Link to='/blog-details' className='bg'>Read More</Link>
 
                             </div>
 
@@ -163,7 +166,7 @@ const BlogItem = () => {
 
                                 </div>
 
-                                <a href="" className='bg'>Read More</a>
+                                <Link to='/blog-details' className='bg'>Read More</Link>
 
                             </div>
 

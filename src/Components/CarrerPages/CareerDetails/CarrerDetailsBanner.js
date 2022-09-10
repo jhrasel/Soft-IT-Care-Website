@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 import axios from 'axios';
 
@@ -9,9 +9,12 @@ const CarrerDetailsBanner = () => {
 
     const [jobDetails, setJobDetails] = useState([]);
 
+    const { carrerId } = useParams();
+
     useEffect(() => {
 
-        axios.get(`https://career.softitdev.xyz/api/v1/job/list`).then(({data})=>{
+
+        axios.get(`https://career.softitdev.xyz/api/v1/job/${carrerId}`).then(({data})=>{
 
             setJobDetails(data.data);
 
@@ -41,13 +44,13 @@ const CarrerDetailsBanner = () => {
                                 <ul>
 
                                     <li><span>Job Type:</span>{jobDetails.type}</li>
-                                    <li><span>Deadline:</span>July 23, 2022</li>
-                                    <li><span>Published On:</span>June 30, 2022</li>
-                                    <li><span>Vacancy:</span>03</li>
-                                    <li><span>Experience:</span>3 To 5 Years</li>
-                                    <li><span>Salary:</span>BDT 50,000 - BDT 60,000</li>
+                                    <li><span>Deadline:</span>{jobDetails.deadline}</li>
+                                    <li><span>Published On:</span>{jobDetails.created_at}</li>
+                                    <li><span>Vacancy:</span>{jobDetails.vacancy}</li>
+                                    <li><span>Experience:</span>{jobDetails.experience}</li>
+                                    <li><span>Salary:</span>BDT {jobDetails.min_salary} - BDT {jobDetails.max_salary}</li>
                                     <li><span>Office Time:</span>09:30 AM - 06:00 PM</li>
-                                    <li><span>Location:</span>Level: 5, House: 32/34, Road: 07, Block: C, Niketan, Gulshan – 1, Dhaka – 1212</li>
+                                    <li><span>Location:</span>{jobDetails.location}</li>
                                 
                                 </ul>
 
@@ -59,7 +62,7 @@ const CarrerDetailsBanner = () => {
                             
                             <div className="CarrerBannerImg">
 
-                                <img src="assets/images/Carrer_banner.png" alt="Carrer_banner" />
+                                <img src="../assets/images/Carrer_banner.png" alt="Carrer_banner" />
 
                             </div>
 

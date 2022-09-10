@@ -70,7 +70,7 @@ const OurVacancie = () => {
                                             </div>
 
                                             <div className="view_details">
-                                                <Link to='/carrer-details' onClick={() => handleLink(item.id)} className='bg'>View Details</Link>
+                                                <Link to={`/carrer-details/${item.id}`} onClick={() => handleLink(item.id)} className='bg'>View Details</Link>
                                             </div>
 
                                         </div>
