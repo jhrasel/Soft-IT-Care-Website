@@ -77,8 +77,11 @@ const Blog = () => {
 
                                                     <div className="img">
                                                         <img src="assets/images/blog-1.png" alt="" />
+                                                        <div className="overlay">
+                                                            <h6>Technology</h6>
+                                                        </div>
                                                     </div>
-                                                    
+
                                                     <div className="text">
 
                                                         <div className="Callender d_flex">
@@ -90,7 +93,7 @@ const Blog = () => {
 
                                                     </div>
 
-                                                    <a href="" className='bg'>Read More</a>
+                                                    <Link to='/blog-details' className='bg'>Read More</Link>
 
                                                 </div>
 

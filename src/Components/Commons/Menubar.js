@@ -32,7 +32,7 @@ const Menubar = (props) => {
                             <Col sm={2}>
 
                                 <div className="logo">
-                                    <Link to='/'><img src="assets/images/logo.png" alt="logo" /></Link>
+                                    <Link to='/'><img src="../assets/images/logo.png" alt="logo" /></Link>
                                 </div>
 
                             </Col>
