@@ -1,9 +1,11 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { BsCalendarCheck } from 'react-icons/bs'
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Navigation } from "swiper";
+import { baseUrl } from '../../Url';
+import axios from 'axios';
 
 import "swiper/css";
 import "swiper/css/pagination";
@@ -11,6 +13,17 @@ import "swiper/css/navigation";
 
 
 const Blog = () => {
+
+    const [blogList, setBlogList] = useState([]);
+
+    useEffect(() => {
+
+        axios.get(baseUrl+'/blog/list').then(({data})=>{
+            setBlogList(data.data);
+
+        })
+
+    },[])
 
 
     return (
@@ -71,83 +84,69 @@ const Blog = () => {
                                         >
 
 
-                                            <SwiperSlide>
+<Swiper
+                                                    spaceBetween={30}
+                                                    slidesPerGroup={3}
+                                                    breakpoints={{
+                                                        650: {
+                                                            slidesPerView: 1,
+                                                        },
+                                                        999: {
+                                                            slidesPerView: 2,
+                                                        },
+                                                        1000: {
+                                                            slidesPerView: 3,
+                                                        },
 
-                                                <div className="BlogSliderItem">
+                                                    }}
+                                                    loop={true}
+                                                    loopFillGroupWithBlank={true}
+                                                    pagination={{
+                                                    clickable: true,
+                                                    }}
+                                                    navigation={true}
+                                                    modules={[Pagination, Navigation]}
+                                                    className="mySwiper"
+                                                >
 
-                                                    <div className="img">
-                                                        <img src="assets/images/blog-1.png" alt="" />
-                                                        <div className="overlay">
-                                                            <h6>Technology</h6>
-                                                        </div>
-                                                    </div>
+                                                    {
 
-                                                    <div className="text">
+                                                        blogList.map((item)=>(
 
-                                                        <div className="Callender d_flex">
-                                                            <BsCalendarCheck/>
-                                                            <span>July 25, 2022</span>
-                                                        </div>
+                                                            <SwiperSlide>
 
-                                                        <h6>Nunc tincidunt dolor et sollicitudin et tincidunt bibendum.....</h6>
+                                                                <div className="BlogSliderItem">
 
-                                                    </div>
+                                                                <div className="img">
+                                                                    <img src= {`https://sitcdev.xyz/${item.image}`} alt="" />
+                                                                    <div className="overlay">
+                                                                        <h6>{item.category}</h6>
+                                                                    </div>
+                                                                </div>
 
-                                                    <Link to='/blog-details' className='bg'>Read More</Link>
+                                                                <div className="text">
 
-                                                </div>
+                                                                    <div className="Callender d_flex">
+                                                                        <BsCalendarCheck/>
+                                                                        <span>{item.created_at ? item.created_at.slice(0,10) : ''}</span>
+                                                                    </div>
 
-                                            </SwiperSlide>
+                                                                    <h6> {item.title ? item.title.slice(0,70) : ''}</h6>
 
-                                            <SwiperSlide>
+                                                                </div>
 
-                                                <div className="BlogSliderItem">
+                                                                <Link to={`/blog-details/${item.id}`} className='bg'>Read More</Link>
 
-                                                    <div className="img">
-                                                        <img src="assets/images/blog-2.png" alt="" />
-                                                    </div>
-                                                    
-                                                    <div className="text">
+                                                                </div>
 
-                                                        <div className="Callender d_flex">
-                                                            <BsCalendarCheck/>
-                                                            <span>July 25, 2022</span>
-                                                        </div>
+                                                            </SwiperSlide>
 
-                                                        <h6>Nunc tincidunt dolor et sollicitudin et tincidunt bibendum.....</h6>
+                                                        ))
 
-                                                    </div>
+                                                    }
 
-                                                    <a href="" className='bg'>Read More</a>
 
-                                                </div>
-
-                                            </SwiperSlide>
-
-                                            <SwiperSlide>
-
-                                                <div className="BlogSliderItem">
-
-                                                    <div className="img">
-                                                        <img src="assets/images/blog-3.png" alt="" />
-                                                    </div>
-                                                    
-                                                    <div className="text">
-
-                                                        <div className="Callender d_flex">
-                                                            <BsCalendarCheck/>
-                                                            <span>July 25, 2022</span>
-                                                        </div>
-
-                                                        <h6>Nunc tincidunt dolor et sollicitudin et tincidunt bibendum.....</h6>
-
-                                                    </div>
-
-                                                    <a href="" className='bg'>Read More</a>
-
-                                                </div>
-
-                                            </SwiperSlide>
+                                                </Swiper>
 
 
                                         </Swiper>

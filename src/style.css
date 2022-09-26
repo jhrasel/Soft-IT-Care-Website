@@ -54,7 +54,7 @@
     max-width: 1440px;
   }
   
-    /* font-family: 'Vollkorn', serif; */
+    /* font-family: 'Asap', sans-serif; */
   
   /* =============== COMMON CSS FOR WEB SITE =============== */
   :root {
@@ -100,7 +100,7 @@
     font-size: 20px;
     line-height: 30px;
     color: var(--text_color);
-    font-family: 'Vollkorn', serif;
+    font-family: 'Asap', sans-serif;
     margin-top: 15px;
   }
   
@@ -240,7 +240,7 @@
   line-height: 30px;
   color: var(--text_color);
   padding: 0 20px;
-  font-family: 'Vollkorn', serif;
+  font-family: 'Asap', sans-serif;
 }
 
 .MenuItem ul li a:hover{
@@ -249,7 +249,7 @@
 
 .MenuItem ul li.active a{
   color: var(--heading_color);
-  font-weight: 700;
+  font-weight: 600;
 }
 
 .SocialIcon{
@@ -906,12 +906,12 @@ CarrerBanner
   margin-top: 50px;
 }
 
-a.bg.getLocation {
+a.bg.getLocation, button.bg.getLocation {
   margin-left: 20px;
   background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%);
 }
 
-a.bg.getLocation:hover {
+a.bg.getLocation:hover, button.bg.getLocation:hover {
   background-position: right center;
   color: #fff;
   text-decoration: none;
@@ -936,12 +936,13 @@ a.bg.getLocation:hover {
     padding: 30px;
   }
 
-  .OurVacancieItem .text h3{
+  .OurVacancieItem .text h3 {
     border-bottom: 1px solid #D9D9D9;
     margin-bottom: 15px;
     padding-bottom: 15px;
     color: var(--heading_color);
-  }
+    min-height: 90px;
+}
 
   .OurVacancieItem ul li{
     font-weight: 400;
@@ -1132,7 +1133,7 @@ a.bg.getLocation:hover {
 
   /* VacancyDetailItem */
   .VacancyDetailItem{
-    margin-top: 50px;
+    /* margin-top: 50px; */
   }
 
   .VacancyDetailItem h3{
@@ -1327,9 +1328,11 @@ a.bg.getLocation:hover {
   font-weight: 400;
 }
 
-.BlogSliderItem img{
+.BlogSliderItem img {
   width: 100%;
   border-radius: 10px;
+  height: 250px;
+  object-fit: cover;
 }
 
 .BlogSliderItem .text{

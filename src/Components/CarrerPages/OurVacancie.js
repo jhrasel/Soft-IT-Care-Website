@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+import { baseUrl } from '../../Url';
+
 
 
 
@@ -11,21 +13,15 @@ const OurVacancie = () => {
 
     useEffect(() => {
 
-        axios.get(`https://career.softitdev.xyz/api/v1/job/list`).then(({data})=>{
+        axios.get(baseUrl+'/job/list').then(({data})=>{
 
             setJobList(data.data);
 
         })
 
-    },[])
+    },[]);
 
-    let handleLink = (jobId) => {
-
-        axios.get(`https://career.softitdev.xyz/api/v1/job/`+ jobId).then(({data})=>{
-
-        })
-
-    }
+   
 
 
     return (
@@ -62,7 +58,7 @@ const OurVacancie = () => {
                                         <div className="OurVacancieItem">
                                             
                                             <div className="text">
-                                                <h3>{item.title}</h3>
+                                                <h3>{item.title ? item.title.slice(0,75) : ''}</h3>
                                                 <ul>
                                                     <li> <span>Salary:</span> BDT {item.min_salary} - BDT {item.max_salary}</li>
                                                     <li> <span>Experience:</span> {item.experience}</li>
@@ -70,7 +66,7 @@ const OurVacancie = () => {
                                             </div>
 
                                             <div className="view_details">
-                                                <Link to={`/carrer-details/${item.id}`} onClick={() => handleLink(item.id)} className='bg'>View Details</Link>
+                                                <Link to={`/carrer-details/${item.id}`} className='bg'>View Details</Link>
                                             </div>
 
                                         </div>

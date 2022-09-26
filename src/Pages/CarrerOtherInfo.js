@@ -1,34 +1,34 @@
-import React from 'react';
-import Menubar from '../Components/Commons/Menubar';
-import Footer from '../Components/Commons/Footer';
-import OtherInfoForm from '../Components/CarrerPages/JobApplication/OtherInfoForm';
+import React from "react";
+import Menubar from "../Components/Commons/Menubar";
+import Footer from "../Components/Commons/Footer";
+import OtherInfoForm from "../Components/CarrerPages/JobApplication/OtherInfoForm";
 
-const CarrerOtherInfo = () => {
+const CarrerOtherInfo = ({
+  info,
+  setInfo,
+  page,
+  setPage,
+  FormTitles,
+  handleSubmission,
+}) => {
+  return (
+    <>
+      <div className="Overflow">
+        <Menubar active="career"></Menubar>
 
+        <OtherInfoForm
+          page={page}
+          setPage={setPage}
+          FormTitles={FormTitles}
+          info={info}
+          setInfo={setInfo}
+          handleSubmission={handleSubmission}
+        ></OtherInfoForm>
 
-    return (
+        <Footer></Footer>
+      </div>
+    </>
+  );
+};
 
-
-        <> 
-
-            <div className="Overflow">
-
-                <Menubar active='career'></Menubar>
-
-                <OtherInfoForm></OtherInfoForm>
-
-                <Footer></Footer>
-
-            </div>
-        
-            
-
-        </>
-
-
-    )
-
-
-}
-
-export default CarrerOtherInfo
+export default CarrerOtherInfo;

@@ -13,6 +13,7 @@ import './media.css';
 import Blog from './Pages/Blog';
 import BlogDetails from './Pages/BlogDetails';
 import ScrollToTop from './ScrollToTop';
+import Form from './Components/CarrerPages/JobApplication/Form';
 
 
 function App() {
@@ -31,12 +32,13 @@ function App() {
 
           <Route path="/" element={<Home />}></Route>
           <Route path="/carrer" element={<Carrer />}></Route>
-          <Route path="/carrer-details/:carrerId" element={<CarrerDetails />}></Route>
-          <Route path="/carrer-personal-info" element={<CarrerPersonalInfo />}></Route>
-          <Route path="/carrer-other-info" element={<CarrerOtherInfo />}></Route>
+          <Route path="/carrer-details/:id" element={<CarrerDetails />}></Route>
+          <Route path="/job_application/:application_id" element={<Form/>}></Route>
+          {/* <Route path="/carrer-personal-info" element={<CarrerPersonalInfo />}></Route>
+          <Route path="/carrer-other-info" element={<CarrerOtherInfo />}></Route> */}
           <Route path="/carrer-successfull" element={<CarrerSuccessful />}></Route>
           <Route path="/blog" element={<Blog />}></Route>
-          <Route path="/blog-details" element={<BlogDetails />}></Route>
+          <Route path="/blog-details/:blog_id" element={<BlogDetails />}></Route>
 
         </Routes>
 

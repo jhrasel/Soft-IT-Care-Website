@@ -1,6 +1,6 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 import { BsCalendarCheck } from 'react-icons/bs'
 import {FaFacebookF, FaLinkedinIn} from 'react-icons/fa';
 import {AiOutlineInstagram, AiFillYoutube, AiOutlineBars} from 'react-icons/ai';
@@ -11,9 +11,37 @@ import { Pagination, Navigation } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
+import { baseUrl } from '../../Url';
+import axios from 'axios';
 
 
 const BlogDetailPage = () => {
+
+    const{blog_id} = useParams();
+
+    const [blogDetails, setBlogDetails] = useState([]);
+    const [blogList, setBlogList] = useState([]);
+
+    // blogDetails
+    useEffect(() => {
+
+        axios.get(baseUrl+`/blog/${blog_id}`).then(({data})=>{
+            setBlogDetails(data.data);
+
+        })
+
+    },[])
+
+    
+    // blogList 
+    useEffect(() => {
+
+        axios.get(baseUrl+'/blog/list').then(({data})=>{
+            setBlogList(data.data);
+
+        })
+
+    },[])
 
 
     return (
@@ -34,15 +62,15 @@ const BlogDetailPage = () => {
                                 
                                 <div className="Header">
 
-                                    <h2>Nunc tincidunt dolor et sollicitudin et tincidunt bibendum</h2>
+                                    <h2>{blogDetails.title}</h2>
                                     
                                     <div className="CategoryTime d_flex">
 
-                                        <h6>Technology</h6>
+                                        <h6>{blogDetails.category}</h6>
 
                                         <div className="Callender d_flex">
                                             <BsCalendarCheck/>
-                                            <span>July 25, 2022</span>
+                                            <span>{blogDetails.created_at ? blogDetails.created_at.slice(0,10) : ''}</span>
                                         </div>
 
                                     </div>
@@ -50,18 +78,12 @@ const BlogDetailPage = () => {
                                 </div>
 
                                 <div className="img">
-                                    <img src="assets/images/blog_single.png" alt="" />
+                                    <img src={`https://sitcdev.xyz/${blogDetails.thumbnail}`} alt="" />
                                 </div>
 
                                 <div className="description">
-                                    
-                                    <p>Soft IT Care is a Web design and development service providing company in Bangladesh. It has versatile functions. It is the only Best Web Design and Development Company which has all in one. We specialize in Software Development, e-Commerce, Graphic Design, Marketing and SEO, Website Security, Mobile Application Development, and the list goes on.</p>
 
-                                    <p>The projects we provide are unique and creative. From the very beginning to till now, we have been working in this field with the highest success and client satisfaction. Our team is highly expert and we use digital technology to provide services.</p>
-
-                                    <p>Soft IT Care is a Web design and development service providing company in Bangladesh. It has versatile functions. It is the only Best Web Design and Development Company which has all in one. We specialize in Software Development, e-Commerce, Graphic Design, Marketing and SEO, Website Security, Mobile Application Development, and the list goes on.</p>
-
-                                    <p>The projects we provide are unique and creative. From the very beginning to till now, we have been working in this field with the highest success and client satisfaction. Our team is highly expert and we use digital technology to provide services.</p>
+                                    <div dangerouslySetInnerHTML={{ __html: blogDetails.details }} />
 
                                 </div>
 
@@ -129,84 +151,41 @@ const BlogDetailPage = () => {
                                                     className="mySwiper"
                                                 >
 
+                                                    {
 
-                                                    <SwiperSlide>
+                                                        blogList.map((item)=>(
 
-                                                        <div className="BlogSliderItem">
+                                                            <SwiperSlide>
 
-                                                            <div className="img">
-                                                                <img src="assets/images/blog-1.png" alt="" />
-                                                                <div className="overlay">
-                                                                    <h6>Technology</h6>
-                                                                </div>
-                                                            </div>
+                                                                <div className="BlogSliderItem">
 
-                                                            <div className="text">
-
-                                                                <div className="Callender d_flex">
-                                                                    <BsCalendarCheck/>
-                                                                    <span>July 25, 2022</span>
+                                                                <div className="img">
+                                                                    <img src= {`https://sitcdev.xyz/${item.image}`} alt="" />
+                                                                    <div className="overlay">
+                                                                        <h6>{item.category}</h6>
+                                                                    </div>
                                                                 </div>
 
-                                                                <h6>Nunc tincidunt dolor et sollicitudin et tincidunt bibendum.....</h6>
+                                                                <div className="text">
 
-                                                            </div>
+                                                                    <div className="Callender d_flex">
+                                                                        <BsCalendarCheck/>
+                                                                        <span>{item.created_at ? item.created_at.slice(0,10) : ''}</span>
+                                                                    </div>
 
-                                                            <Link to='/blog-details' className='bg'>Read More</Link>
+                                                                    <h6> {item.title ? item.title.slice(0,70) : ''}</h6>
 
-                                                        </div>
-
-                                                    </SwiperSlide>
-
-                                                    <SwiperSlide>
-
-                                                        <div className="BlogSliderItem">
-
-                                                            <div className="img">
-                                                                <img src="assets/images/blog-2.png" alt="" />
-                                                            </div>
-                                                            
-                                                            <div className="text">
-
-                                                                <div className="Callender d_flex">
-                                                                    <BsCalendarCheck/>
-                                                                    <span>July 25, 2022</span>
                                                                 </div>
 
-                                                                <h6>Nunc tincidunt dolor et sollicitudin et tincidunt bibendum.....</h6>
+                                                                <Link to={`/blog-details/${item.id}`} className='bg'>Read More</Link>
 
-                                                            </div>
-
-                                                            <a href="" className='bg'>Read More</a>
-
-                                                        </div>
-
-                                                    </SwiperSlide>
-
-                                                    <SwiperSlide>
-
-                                                        <div className="BlogSliderItem">
-
-                                                            <div className="img">
-                                                                <img src="assets/images/blog-3.png" alt="" />
-                                                            </div>
-                                                            
-                                                            <div className="text">
-
-                                                                <div className="Callender d_flex">
-                                                                    <BsCalendarCheck/>
-                                                                    <span>July 25, 2022</span>
                                                                 </div>
 
-                                                                <h6>Nunc tincidunt dolor et sollicitudin et tincidunt bibendum.....</h6>
+                                                            </SwiperSlide>
 
-                                                            </div>
+                                                        ))
 
-                                                            <a href="" className='bg'>Read More</a>
-
-                                                        </div>
-
-                                                    </SwiperSlide>
+                                                    }
 
 
                                                 </Swiper>

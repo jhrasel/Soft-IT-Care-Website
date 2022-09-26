@@ -14,7 +14,7 @@ const BlogDetails = () => {
 
             <div className="Overflow">
 
-                <Menubar active='career'></Menubar>
+                <Menubar active='blog'></Menubar>
 
                 <BlogDetailPage></BlogDetailPage>
 

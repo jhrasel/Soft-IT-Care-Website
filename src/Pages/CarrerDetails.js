@@ -1,11 +1,10 @@
 import React from 'react';
 import Menubar from '../Components/Commons/Menubar';
 import Footer from '../Components/Commons/Footer';
+import PersonalInfoForm from '../Components/CarrerPages/JobApplication/PersonalInfoForm';
 import CarrerDetailsBanner from '../Components/CarrerPages/CareerDetails/CarrerDetailsBanner';
-import WhoWeAre from '../Components/CarrerPages/CareerDetails/WhoWeAre';
-import VacancyDetails from '../Components/CarrerPages/CareerDetails/VacancyDetails';
 
-const CarrerDetails = () => {
+const CarrerDetails = ({info, setInfo,handleFile,page,setPage,FormTitles}) => {
 
 
     return (
@@ -19,12 +18,7 @@ const CarrerDetails = () => {
 
                 <CarrerDetailsBanner></CarrerDetailsBanner>
 
-                <WhoWeAre></WhoWeAre>
-
-                <VacancyDetails></VacancyDetails>
-
                 <Footer></Footer>
-
 
             </div>
 
