@@ -5,16 +5,22 @@ import { baseUrl } from "../../../Url";
 
 import VacancyDetails from "./VacancyDetails";
 import WhoWeAre from "./WhoWeAre";
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 
 const CarrerDetailsBanner = () => {
+
   const [jobDetails, setJobDetails] = useState({});
   const { id } = useParams();
+
+  let [isLoad, setIsLoad] = useState(true);
+
   useEffect(() => {
     const url = baseUrl+`/job/${id}`;
 
     fetch(url)
       .then((res) => res.json())
       .then((data) => setJobDetails(data.data));
+      setIsLoad(false);
   }, []);
 
   const {
@@ -35,62 +41,88 @@ const CarrerDetailsBanner = () => {
       <section className="CarrerBanner CarrerDetailsBanner
       mt-4">
         <Container>
+        <SkeletonTheme>
+
           <Row className="d_flex">
-            <Col xs={12} lg={5}>
-              <div className="CarrerDetailsBannerContent">
-                <h2>{title}</h2>
+            {
 
-                <ul>
-                  <li>
-                    <span>Job Type:</span>
-                    { type == "full_time" ? "Full Time" : " "}
-                  </li>
-                  <li>
-                    <span>Deadline:</span>
-                    {deadline?deadline.slice(0, 10): ""}
-                  </li>
-                  <li>
-                    <span>Published On:</span>
-                    {created_at?created_at.slice(0, 10): []}
-                  </li>
-                  <li>
-                    <span>Vacancy:</span>
-                    {vacancy}
-                  </li>
-                  <li>
-                    <span>Experience:</span>3 To 5 Years
-                  </li>
-                  {salary_type === "negotiable" ? (
+              isLoad
+              ?
+                <Col xs={12} lg={5}>
+                <div className="CarrerDetailsBannerContent">
+                  <h2><Skeleton/></h2>
+
+                  <ul>
                     <li>
-                      <span>Salary:</span>Negotiable
+                      <Skeleton count={10}/>
                     </li>
-                  ) : (
-                    <li>
-                      <span>Salary: </span>BDT{" "}
-                      {min_salary?.toLocaleString("en-US") || ""} - BDT{" "}
-                      {max_salary?.toLocaleString("en-US") || ""}
-                    </li>
-                  )}
 
-                  <li>
-                    <span>Office Time:</span>09:30 AM - 06:00 PM
-                  </li>
-                  <li>
-                    <span>Location:</span>SAR Bhaban, Level-5, Ka-78, Pragati Sarani, Kuril, Vatara, 1229 Dhaka, Bangladesh
-                  </li>
-                </ul>
-              </div>
-            </Col>
+                  </ul>
+                </div>
+                </Col>
+              :
+                <>
+                
+                  <Col xs={12} lg={5}>
+                    <div className="CarrerDetailsBannerContent">
+                      <h2>{title ? title.slice(0, 100) : '' }</h2>
 
-            <Col xs={12} lg={7}>
-              <div className="CarrerBannerImg">
-                <img
-                  src="../assets/images/Carrer_banner.png"
-                  alt="Carrer_banner"
-                />
-              </div>
-            </Col>
+                      <ul>
+                        <li>
+                          <span>Job Type:</span>
+                          { type == "full_time" ? "Full Time" : " "}
+                        </li>
+                        <li>
+                          <span>Deadline:</span>
+                          {deadline?deadline.slice(0, 10): ""}
+                        </li>
+                        <li>
+                          <span>Published On:</span>
+                          {created_at?created_at.slice(0, 10): []}
+                        </li>
+                        <li>
+                          <span>Vacancy:</span>
+                          {vacancy}
+                        </li>
+                        <li>
+                          <span>Experience:</span>3 To 5 Years
+                        </li>
+                        {salary_type === "negotiable" ? (
+                          <li>
+                            <span>Salary:</span>Negotiable
+                          </li>
+                        ) : (
+                          <li>
+                            <span>Salary: </span>BDT{" "}
+                            {min_salary?.toLocaleString("en-US") || ""} - BDT{" "}
+                            {max_salary?.toLocaleString("en-US") || ""}
+                          </li>
+                        )}
+
+                        <li>
+                          <span>Office Time:</span>09:30 AM - 06:00 PM
+                        </li>
+                        <li>
+                          <span>Location:</span>SAR Bhaban, Level-5, Ka-78, Pragati Sarani, Kuril, Vatara, 1229 Dhaka, Bangladesh
+                        </li>
+                      </ul>
+                    </div>
+                  </Col>
+
+                  <Col xs={12} lg={7}>
+                    <div className="CarrerBannerImg">
+                      <img
+                        src="../assets/images/Carrer_banner.png"
+                        alt="Carrer_banner"/>
+                    </div>
+                  </Col>
+                </>
+              
+            }
+            
+            
           </Row>
+          </SkeletonTheme>
         </Container>
       </section>
 

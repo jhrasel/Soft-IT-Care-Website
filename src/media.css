@@ -741,4 +741,16 @@
     .OurVacancieItem .text h3 {
         min-height: 50px;
     }
+    .BlogSlider .swiper.swiper-initialized {
+        padding: 0 0px !important;
+    }
+    .BlogSliderItem .text {
+        padding: 20px 0px;
+        padding-bottom: 0;
+    }
+    .BlogSliderItem .text h6 {
+        margin-top: 10px;
+        font-size: 18px;
+        line-height: 26px;
+    }
 }

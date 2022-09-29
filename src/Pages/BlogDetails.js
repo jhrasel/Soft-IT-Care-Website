@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Menubar from '../Components/Commons/Menubar';
 import Footer from '../Components/Commons/Footer';
 import BlogDetailPage from '../Components/BlogPages/BlogDetailPage';
@@ -11,18 +11,19 @@ const BlogDetails = () => {
 
         <>
 
+            {
 
-            <div className="Overflow">
+                <div className="Overflow">
 
-                <Menubar active='blog'></Menubar>
+                    <Menubar active='blog'></Menubar>
 
-                <BlogDetailPage></BlogDetailPage>
+                    <BlogDetailPage></BlogDetailPage>
 
-                <Footer></Footer>
+                    <Footer></Footer>
 
-            </div>
+                </div>
 
-
+            }
 
         </>
 

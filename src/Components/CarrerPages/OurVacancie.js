@@ -3,11 +3,14 @@ import { Container, Row, Col } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { baseUrl } from '../../Url';
+import Skeleton, { SkeletonTheme } from 'react-loading-skeleton';
 
 
 
 
 const OurVacancie = () => {
+
+    let [isLoad, setIsLoad] = useState(true);
 
     const [jobList, setJobList] = useState([]);
 
@@ -16,7 +19,7 @@ const OurVacancie = () => {
         axios.get(baseUrl+'/job/list').then(({data})=>{
 
             setJobList(data.data);
-
+            setIsLoad(false)
         })
 
     },[]);
@@ -47,39 +50,91 @@ const OurVacancie = () => {
                     {/* Content */}
                     <div className="OurVacancieContent">
 
-                        <Row>
+                        <SkeletonTheme>
 
                             {
 
-                                jobList.map((item, key)=>(
+                                isLoad
+                                ?
+                                <>
+                                
+                                    <Row>
 
-                                    <Col sm={4} key={key}>
+                                        {
 
-                                        <div className="OurVacancieItem">
-                                            
-                                            <div className="text">
-                                                <h3>{item.title ? item.title.slice(0,75) : ''}</h3>
-                                                <ul>
-                                                    <li> <span>Salary:</span> BDT {item.min_salary} - BDT {item.max_salary}</li>
-                                                    <li> <span>Experience:</span> {item.experience}</li>
-                                                </ul>
-                                            </div>
+                                            jobList.map((item, key)=>(
 
-                                            <div className="view_details">
-                                                <Link to={`/carrer-details/${item.id}`} className='bg'>View Details</Link>
-                                            </div>
+                                                <Col sm={4} key={key}>
 
-                                        </div>
+                                                    <div className="OurVacancieItem">
+                                                        
+                                                        <div className="text">
+                                                            <h3><Skeleton/></h3>
+                                                            <ul>
+                                                                <li> <Skeleton/></li>
+                                                                <li> <Skeleton/></li>
+                                                            </ul>
+                                                        </div>
 
-                                    </Col>
+                                                        <div className="view_details">
+                                                            <Link to='' className='bg'><Skeleton/></Link>
+                                                        </div>
 
-                                ))
+                                                    </div>
+
+                                                </Col>
+
+                                            ))
+
+                                        }
+
+
+
+                                    </Row>
+
+                                </>
+                                :
+                                <>
+                                
+                                    <Row>
+
+                                        {
+
+                                            jobList.map((item, key)=>(
+
+                                                <Col sm={4} key={key}>
+
+                                                    <div className="OurVacancieItem">
+                                                        
+                                                        <div className="text">
+                                                            <h3>{item.title ? item.title.slice(0,75) : ''}</h3>
+                                                            <ul>
+                                                                <li> <span>Salary:</span> BDT {item.min_salary} - BDT {item.max_salary}</li>
+                                                                <li> <span>Experience:</span> {item.experience}</li>
+                                                            </ul>
+                                                        </div>
+
+                                                        <div className="view_details">
+                                                            <Link to={`/carrer-details/${item.id}`} className='bg'>View Details</Link>
+                                                        </div>
+
+                                                    </div>
+
+                                                </Col>
+
+                                            ))
+
+                                        }
+
+
+
+                                    </Row>
+
+                                </>
 
                             }
 
-                            
-
-                        </Row>
+                        </SkeletonTheme>
 
                     </div>
                     
