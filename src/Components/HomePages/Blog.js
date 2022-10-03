@@ -63,8 +63,8 @@ const Blog = () => {
                     modules={[Pagination, Navigation]}
                     className="mySwiper"
                   >
-                    {blogList.map((item) => (
-                      <SwiperSlide>
+                    {blogList.map((item, key) => (
+                      <SwiperSlide key={key}>
                         <div className="BlogSliderItem">
                           <div className="img">
                             <img

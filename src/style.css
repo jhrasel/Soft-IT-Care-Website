@@ -52,6 +52,7 @@
 
   .container{
     max-width: 1440px;
+    padding: 0;
   }
   
     /* font-family: 'Asap', sans-serif; */
@@ -217,8 +218,8 @@
     START Menubar PART
   --------------------------------------------------------------------------------------------------------------------------------------------------- */
 
-.Menubar{
-  width: calc(100% - 240px);
+.Menubar {
+  width: calc(100% - 160px);
   margin: 0 auto;
   background: #FFFFFF;
   border-radius: 10px;
@@ -353,6 +354,11 @@
 /* -------------------------------
 Banner
 ------------------------------- */
+
+.Banner .section_gaps {
+  padding-top: 100px;
+}
+
 .Banner img{
   width: 100%;
 }
@@ -509,12 +515,117 @@ OurService
 /* -------------------------------
 WorkProcess
 ------------------------------- */
-.WorkProcessContent{
-  margin-top: 50px;
+.WorkProcessContent {
+  margin-top: 80px;
+}
+
+.WorkProcessItem {
+  background: #FFF;
+  border-radius: 40px;
+  width: 18%;
+  padding: 5px;
+  position: relative;
+  transition: all linear .5s;
+}
+
+.WorkProcessItem:hover{
+  transform: translateY(-5px);
 }
 
 .WorkProcessImg img{
-  width: 105%;
+  width: 100%;
+}
+
+.checklist {
+  text-align: right;
+  margin-top: -40px;
+  padding-right: 10px;
+}
+
+.checklist img{
+  height: 60px;
+  width: auto;
+}
+
+.WorkProcessItem .text{
+  padding: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+
+.WorkProcessItem .text h4{
+  font-size: 24px;
+  line-height: 35px;
+  color: var(--text_color);
+  position: relative;
+}
+
+.WorkProcessItem .text h4::after{
+  position: absolute;
+  content: '';
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100px;
+  height: 2px;
+  background: #FFD415;
+}
+
+.WorkProcessItem .overlay {
+  position: absolute;
+  top: -35px;
+  left: 35px;
+  width: 85px;
+  height: 85px;
+  border-radius: 50%;
+  background: #FFD415;
+  border: 5px solid #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0px 0px 199px rgb(141 141 141 / 9%), 0px 0px 116.544px rgb(141 141 141 / 7%), 0px 0px 63.3852px rgb(141 141 141 / 5%), 0px 0px 32.3375px rgb(141 141 141 / 5%), 0px 0px 16.2148px rgb(141 141 141 / 4%), 0px 0px 7.83102px rgb(141 141 141 / 2%);
+}
+
+.WorkProcessItem .overlay span{
+  font-size: 30px;
+  font-weight: 700;
+  color: #FFF;
+}
+
+/* orange */
+.WorkProcessItem.orange .overlay{
+  background: #F19923;
+}
+
+.WorkProcessItem.orange h4::after{
+  background: #F19923;
+}
+
+/* pink */
+.WorkProcessItem.pink .overlay{
+  background: #E63B63;
+}
+
+.WorkProcessItem.pink h4::after{
+  background: #E63B63;
+}
+
+/* blue */
+.WorkProcessItem.blue .overlay{
+  background: #04B0BB;
+}
+
+.WorkProcessItem.blue h4::after{
+  background: #04B0BB;
+}
+
+/* purple */
+.WorkProcessItem.purple .overlay{
+  background: #64549F;
+}
+
+.WorkProcessItem.purple h4::after{
+  background: #64549F;
 }
 
 /* -------------------------------
@@ -1644,9 +1755,19 @@ a.bg.getLocation:hover, button.bg.getLocation:hover {
 
 
 /* ---------------------------------------------------------------------------------------------------------------------------------------------------
-  START  PART
+  START Gallery PART
   --------------------------------------------------------------------------------------------------------------------------------------------------- */
-  
+.GalleryContent{
+  margin-top: 50px;
+}
+
+.GalleryContent img{
+  width: 100%;
+}
+
+.GalleryContent .row .col-sm-4 .GalleryImg{
+  margin-bottom: 20px;
+}
 
 
 
@@ -1699,4 +1820,117 @@ a.bg.getLocation:hover, button.bg.getLocation:hover {
 .preLoader img{
   height: 80px;
   transition: all linear .3s;
+}
+
+button.scroll-to-top svg path{
+  fill: var(--heading_color2);
+} 
+
+
+.up-down{
+  animation: up-down linear 4s;
+  animation-iteration-count: infinite;
+  transform-origin: 50% 50%;
+  -webkit-animation: up-down linear 4s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-transform-origin: 50% 50%;
+  -moz-animation: up-down linear 4s;
+  -moz-animation-iteration-count: infinite;
+  -moz-transform-origin: 50% 50%;
+  -o-animation: up-down linear 4s;
+  -o-animation-iteration-count: infinite;
+  -o-transform-origin: 50% 50%;
+  -ms-animation: up-down linear 4s;
+  -ms-animation-iteration-count: infinite;
+  -ms-transform-origin: 50% 50%;
+}
+
+@keyframes up-down{
+  0% {
+    transform:  translate(1px,20px)  ;
+  }
+  24% {
+    transform:  translate(1px,30px)  ;
+  }
+  50% {
+    transform:  translate(1px,12px)  ;
+  }
+  74% {
+    transform:  translate(1px,22px)  ;
+  }
+  100% {
+    transform:  translate(1px,22px)  ;
+  }
+}
+
+@-moz-keyframes up-down{
+  0% {
+    -moz-transform:  translate(1px,20px)  ;
+  }
+  24% {
+    -moz-transform:  translate(1px,30px)  ;
+  }
+  50% {
+    -moz-transform:  translate(1px,12px)  ;
+  }
+  74% {
+    -moz-transform:  translate(1px,22px)  ;
+  }
+  100% {
+    -moz-transform:  translate(1px,22px)  ;
+  }
+}
+
+@-webkit-keyframes up-down {
+  0% {
+    -webkit-transform:  translate(1px,20px)  ;
+  }
+  24% {
+    -webkit-transform:  translate(1px,30px)  ;
+  }
+  50% {
+    -webkit-transform:  translate(1px,12px)  ;
+  }
+  74% {
+    -webkit-transform:  translate(1px,22px)  ;
+  }
+  100% {
+    -webkit-transform:  translate(1px,22px)  ;
+  }
+}
+
+@-o-keyframes up-down {
+  0% {
+    -o-transform:  translate(1px,20px)  ;
+  }
+  24% {
+    -o-transform:  translate(1px,30px)  ;
+  }
+  50% {
+    -o-transform:  translate(1px,12px)  ;
+  }
+  74% {
+    -o-transform:  translate(1px,22px)  ;
+  }
+  100% {
+    -o-transform:  translate(1px,22px)  ;
+  }
+}
+
+@-ms-keyframes up-down {
+  0% {
+    -ms-transform:  translate(1px,20px)  ;
+  }
+  24% {
+    -ms-transform:  translate(1px,30px)  ;
+  }
+  50% {
+    -ms-transform:  translate(1px,12px)  ;
+  }
+  74% {
+    -ms-transform:  translate(1px,22px)  ;
+  }
+  100% {
+    -ms-transform:  translate(1px,22px)  ;
+  }
 }

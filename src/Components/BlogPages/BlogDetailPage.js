@@ -162,9 +162,9 @@ const BlogDetailPage = () => {
 
                                                                 {
 
-                                                                    blogList.map((item)=>(
+                                                                    blogList.map((item, key)=>(
 
-                                                                        <SwiperSlide>
+                                                                        <SwiperSlide key={key}>
 
                                                                             <div className="BlogSliderItem">
 
