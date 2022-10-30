@@ -11,7 +11,6 @@ const BlogBanner = () => {
 
         <>
         
-
             <section className='CarrerBanner BlogBanner'>
 
                 <Container>
@@ -49,7 +48,6 @@ const BlogBanner = () => {
                 </Container>
 
             </section>
-
 
         </>
 
